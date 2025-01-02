@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-epilogue;
+  }
+
+  p {
+    @apply font-inter;
+  }
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+#hero {
+  --half-image: calc(68rem * 9 / 16 / 2);
+  margin-bottom: var(--half-image);
+}
+
+.nav-item .menu {
+  display: none;
+}
+.nav-item:hover .menu {
+  display: block;
+}

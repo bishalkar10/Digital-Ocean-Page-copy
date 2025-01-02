@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Digital Ocean Homepage</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100..900&family=Inter:opsz,wght@14..32,100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="bg-white fixed z-50 top-0 left-0 right-0 px-6 py-4 flex items-center justify-between border-b-2 border-blue-gray"
+    >
+      <svg class="text-blue-700 h-8 w-8">
+        <use href="./public/spritesheet.svg#icon-digital-ocean"></use>
+      </svg>
+
+      <ul class="hidden lg:flex">
+        <li
+          class="nav-item group text-blue-gray font-inter flex gap-2 items-center px-4 py-2 hover:bg-[#eff2fb] rounded-2xl"
+        >
+          Products
+          <span class="text-sm group-hover:rotate-180 transition-transform">
+            <svg class="text-blue-gray h-4 w-4">
+              <use href="./public/spritesheet.svg#icon--Arrow-Down"></use>
+            </svg>
+          </span>
+
+          <!-- Products dropdown -->
+          <div
+            class="menu w-full absolute bg-white top-[calc(100%+2px)] left-0 px-6 pt-6 pb-20 font-inter"
+          >
+            <div class="grid grid-cols-9 gap-10 bg-white max-w-[68rem] mx-auto">
+              <div class="col-span-3 p-8 border-2 bg-light-blue rounded-3xl">
+                <p class="text-sm mb-3 text-[#0a1632] font-semibold">
+                  Featured Products
+                </p>
+                <ul class="flex flex-col">
+                  <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
+                    <a href="#">
+                      <p class="text-charcoal text-lg">Droplets</p>
+                      <p class="font-medium text-blue-gray">
+                        Scalable virtual machines
+                      </p>
+                    </a>
+                  </li>
+                  <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
+                    <a href="#">
+                      <p class="text-charcoal text-lg">Kubernetes</p>
+                      <p class="font-medium text-blue-gray">
+                        Scalable virtual machines
+                      </p>
+                    </a>
+                  </li>
+                  <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
+                    <a href="#">
+                      <p class="text-charcoal text-lg">AI / ML</p>
+                      <p class="font-medium text-blue-gray">
+                        Build and scale AI models
+                      </p>
+                    </a>
+                  </li>
+                  <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
+                    <a href="#">
+                      <p class="text-charcoal text-lg">Cloudways</p>
+                      <p class="font-medium text-blue-gray">
+                        Managed cloud hosting
+                      </p>
+                    </a>
+                  </li>
+                  <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
+                    <a href="#">
+                      <p class="text-charcoal text-lg">App Platform</p>
+                      <p class="font-medium text-blue-gray">
+                        Get apps to market faster
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- 2nd column -->
+              <div class="flex flex-col gap-4 col-span-2 py-10">
+                <p class="text-sm text-[#0a1632] font-semibold">Compute</p>
+                <ul class="flex flex-col gap-2">
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">Droplets</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">Kubernetes</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">CPU-Optimized Droplets</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">Functions</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">App Platform</a>
+                  </li>
+                </ul>
+
+                <!--  -->
+                <p class="text-sm text-[#0a1632] font-semibold">AI /ML</p>
+                <ul class="flex flex-col gap-2">
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">GPU Droplets</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">1-Click Models</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">GenAI Platform</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">Bare Metal GPUs</a>
+                  </li>
+                </ul>
+
+                <!--  -->
+
+                <p class="text-sm text-[#0a1632] font-semibold">
+                  Backups & Snapshots
+                </p>
+                <ul class="flex flex-col gap-2">
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">Backups</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">Snapshots</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">Snapshooter</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">Bare Metal GPUs</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- 3rd column -->
+
+              <div class="flex flex-col gap-4 col-span-2 py-10">
+                <p class="text-sm text-[#0a1632] font-semibold">Networking</p>
+                <ul class="flex flex-col gap-2">
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">Virtual Private Cloud (VPC)</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">Cloud Firewalls</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">Load Balancers</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">DNS</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">DDoS Protection</a>
+                  </li>
+                </ul>
+
+                <!--  -->
+                <p class="text-sm text-[#0a1632] font-semibold">
+                  Managed Databases
+                </p>
+                <ul class="flex flex-col gap-2">
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">MongoDB</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">Kafka</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">MySQL</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">PostgreSQL</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">Caching</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">OpenSearch</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!--  -->
+
+              <div class="flex flex-col gap-4 col-span-2 py-10">
+                <p class="text-sm text-[#0a1632] font-semibold">Storage</p>
+                <ul class="flex flex-col gap-2">
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">Spaces Object Storage</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">Volume Block Storage</a>
+                  </li>
+                </ul>
+
+                <!--  -->
+                <p class="text-sm text-[#0a1632] font-semibold">
+                  Developer Tools
+                </p>
+                <ul class="flex flex-col gap-2">
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">API</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">CLI</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">Support Plans</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">Monitoring</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">Uptime</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">Identity Access Management</a>
+                  </li>
+                </ul>
+
+                <p class="text-sm text-[#0a1632] font-semibold">
+                  Cloud Website Hosting
+                </p>
+                <ul class="flex flex-col gap-2">
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">Cloudways</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          class="group text-blue-gray font-inter flex gap-2 items-center px-4 py-2 hover:bg-[#eff2fb] rounded-2xl"
+        >
+          Solutions
+          <span class="text-sm group-hover:rotate-180 transition-transform">
+            <svg class="text-blue-gray h-4 w-4">
+              <use href="./public/spritesheet.svg#icon--Arrow-Down"></use>
+            </svg>
+          </span>
+        </li>
+        <li
+          class="group text-blue-gray font-inter flex gap-2 items-center px-4 py-2 hover:bg-[#eff2fb] rounded-2xl"
+        >
+          Developers
+          <span class="text-sm group-hover:rotate-180 transition-transform">
+            <svg class="text-blue-gray h-4 w-4">
+              <use href="./public/spritesheet.svg#icon--Arrow-Down"></use>
+            </svg>
+          </span>
+        </li>
+        <li
+          class="group text-blue-gray font-inter flex gap-2 items-center px-4 py-2 hover:bg-[#eff2fb] rounded-2xl"
+        >
+          Partners
+          <span class="text-sm group-hover:rotate-180 transition-transform">
+            <svg class="text-blue-gray h-4 w-4">
+              <use href="./public/spritesheet.svg#icon--Arrow-Down"></use>
+            </svg>
+          </span>
+        </li>
+        <li
+          class="text-blue-gray font-inter px-4 py-2 hover:bg-[#eff2fb] rounded-2xl"
+        >
+          Pricing
+        </li>
+      </ul>
+    </header>
+    <section
+      id="hero"
+      class="bg-gradient-to-b from-[#1433d6] to-[#0069ff] bg-[center_top] bg-cover bg-no-repeat px-6 pt-20 -pb-10 mb-40 md:bg-[url('/public/hero_background.svg')]"
+    >
+      <div
+        class="w-full mx-auto md:max-w-[54rem] flex flex-col items-center gap-2"
+      >
+        <h1
+          class="text-[28px] text-center font-epilogue font-bold text-soft-white md:text-5xl md:max-w-[40rem]"
+        >
+          The simplest cloud that scales with you.
+        </h1>
+        <p
+          class="text-center text-soft-white mb-10 md:text-lg md:max-w-[40rem]"
+        >
+          Powerful and production-ready, our cloud platform has the solutions
+          that devs like you need to succeed—whether you're building
+          world-changing AI apps, running a side project, or building a
+          business.
+        </p>
+        <div
+          class="w-full mx-auto flex flex-col gap-4 md:flex-row md:justify-center"
+        >
+          <div
+            class="flex bg-white px-6 py-2 mg rounded-4xl justify-center text-charcoal font-semibold"
+          >
+            Sign up with email
+          </div>
+          <div
+            class="flex gap-3 px-6 py-2 bg-white rounded-4xl justify-center text-charcoal font-semibold"
+          >
+            <img class="w-6 h-6" src="./public/google.svg" alt="Google icon" />
+            Sign up with Google
+          </div>
+          <div
+            class="flex gap-3 px-6 py-2 bg-white rounded-4xl justify-center text-charcoal font-semibold"
+          >
+            <img
+              class="w-6 h-6"
+              src="./public/github.svg"
+              alt="Github Icon"
+            />Sign up with Github
+          </div>
+        </div>
+      </div>
+      <img
+        class="w-full aspect-video rounded-xl max-w-[68rem] mx-auto translate-y-1/2"
+        src="./public/dashboard.svg"
+        alt="Dashboard"
+        id="dashboard-photo"
+      />
+    </section>
+
+    <section class="py-20 px-6 overflow-hidden">
+      <div
+        class="bg-blue-600 rounded-xl flex flex-col lg:flex-row max-w-[68rem] mx-auto"
+      >
+        <div class="p-6">
+          <h2 class="font-bold text-white text-xl">
+            Now Available: GPU Droplets
+          </h2>
+          <p class="text-white mb-2">
+            Access greater computing power with DigitalOcean's GPU Droplets, now
+            available on-demand starting at $2.99/GPU/hour. Experience
+            affordable, high-performance AI infrastructure designed for
+            developers and startups.
+          </p>
+          <a
+            href="#"
+            class="relative flex w-max items-center gap-3 text-white after:bg-white"
+          >
+            Learn more
+            <svg
+              viewBox="0 0 18 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4"
+            >
+              <path
+                d="M12.6033 1.27344L16.6033 5.77344L12.6033 10.2734"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M1.60327 5.77344H16.6033"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <img
+          class="object-contain w-full"
+          src="./public/fish_photo.svg"
+          alt="Picuture of Fishes"
+        />
+      </div>
+    </section>
+    <div class="bg-soft-white">
+      <div class="grid grid-cols-6 gap-10 px-6 py-20 max-w-[71rem] mx-auto">
+        <div class="flex flex-col gap-2 col-span-6 md:col-span-3 lg:col-span-2">
+          <h3 class="text-[28px] font-bold">#1</h3>
+          <p class="text-blue-gray">
+            In IaaS usability, VPS for SMBs, & SMB Hosting
+            <a class="underline text-blue-500">on G2</a>
+          </p>
+        </div>
+        <div class="flex flex-col gap-2 col-span-6 md:col-span-3 lg:col-span-2">
+          <h3 class="text-[28px] font-bold">99.99%</h3>
+          <p class="text-blue-gray">
+            Uptime SLA for Droplets and Volumes block storage
+          </p>
+        </div>
+        <div class="flex flex-col gap-2 col-span-6 md:col-span-3 lg:col-span-2">
+          <h3 class="text-[28px] font-bold">>600k</h3>
+          <p class="text-blue-gray">Customers building with DigitalOcean</p>
+        </div>
+      </div>
+    </div>
+    <section class="py-20 px-6 max-w-[71rem] mx-auto">
+      <h2 class="font-bold text-[28px] text-center">
+        A cloud for your entire journey
+      </h2>
+      <p class="text-center text-blue-gray mb-6 max-w-[40rem] mx-auto">
+        DigitalOcean's suite of products is designed to be with you on every
+        step of your journey, whether you want to do it yourself or get help
+        from the experts.
+      </p>
+      <a
+        href="#"
+        class="relative flex w-max items-center gap-3 m-auto mb-16 font-semibold after:bg-black"
+        >See all products
+        <svg
+          viewBox="0 0 18 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-4 h-4"
+        >
+          <path
+            d="M12.6033 1.27344L16.6033 5.77344L12.6033 10.2734"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M1.60327 5.77344H16.6033"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+      </a>
+
+      <div class="grid grid-cols-6 gap-6">
+        <div
+          class="flex flex-col gap-6 ring-2 ring-blue-200 bg-light-blue p-8 pb-10 rounded-2xl col-span-6 md:col-span-3 lg:col-span-2"
+        >
+          <div class="flex gap-4 items-center">
+            <svg class="text-blue-600 w-12 h-12">
+              <use href="./public/spritesheet.svg#icon--virtual-machine"></use>
+            </svg>
+            <h3 class="font-bold text-xl">Virtual machines</h3>
+          </div>
+
+          <svg viewBox="0 0 1 0.002" preserveAspectRatio="none">
+            <path
+              d="M0 0 l12 0"
+              stroke="#A9B3CA"
+              stroke-width="1"
+              stroke-dasharray="4 8"
+              vector-effect="non-scaling-stroke"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+
+          <p class="text-blue-gray">
+            DigitalOcean Droplets are simple, scalable virtual machines for all
+            your
+            <a
+              class="underline text-blue-700"
+              href="https://www.digitalocean.com/products/block-storage"
+              >web hosting</a
+            >
+            and
+            <a
+              class="underline text-blue-700"
+              href="https://www.digitalocean.com/solutions/vps-hosting"
+              >VPS hosting</a
+            >
+            needs.
+          </p>
+
+          <a
+            href="https://www.digitalocean.com/products/droplets"
+            class="relative flex w-max items-center gap-3 font-semibold after:bg-black"
+          >
+            Learn more
+            <svg
+              viewBox="0 0 18 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4"
+            >
+              <path
+                d="M12.6033 1.27344L16.6033 5.77344L12.6033 10.2734"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M1.60327 5.77344H16.6033"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <!--  -->
+        <div
+          class="flex flex-col gap-6 ring-2 ring-blue-200 bg-light-blue p-8 pb-10 rounded-2xl col-span-6 md:col-span-3 lg:col-span-2"
+        >
+          <div class="flex gap-4 items-center">
+            <svg class="text-blue-600 w-12 h-12">
+              <use href="./public/spritesheet.svg#icon--kubernetes"></use>
+            </svg>
+            <h3 class="font-bold text-xl">Kubernetes</h3>
+          </div>
+
+          <svg viewBox="0 0 1 0.002" preserveAspectRatio="none">
+            <path
+              d="M0 0 l12 0"
+              stroke="#A9B3CA"
+              stroke-width="1"
+              stroke-dasharray="4 8"
+              vector-effect="non-scaling-stroke"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+
+          <p class="text-blue-gray">
+            DigitalOcean Kubernetes is a managed solution that is easy to scale
+            and includes a 99.95% SLA and free control plane.
+          </p>
+
+          <a
+            href="https://www.digitalocean.com/products/kubernetes"
+            class="relative flex w-max items-center gap-3 font-semibold after:bg-black"
+          >
+            Learn more
+            <svg
+              viewBox="0 0 18 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4"
+            >
+              <path
+                d="M12.6033 1.27344L16.6033 5.77344L12.6033 10.2734"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M1.60327 5.77344H16.6033"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <!--  -->
+        <div
+          class="flex flex-col gap-6 ring-2 ring-blue-200 bg-light-blue p-8 pb-10 rounded-2xl col-span-6 md:col-span-3 lg:col-span-2"
+        >
+          <div class="flex gap-4 items-center">
+            <svg class="text-blue-700 w-12 h-12">
+              <use href="public/spritesheet.svg#icon--AI-ML"></use>
+            </svg>
+            <h3 class="font-bold text-xl">AI / ML</h3>
+          </div>
+
+          <svg viewBox="0 0 1 0.002" preserveAspectRatio="none">
+            <path
+              d="M0 0 l12 0"
+              stroke="#A9B3CA"
+              stroke-width="1"
+              stroke-dasharray="4 8"
+              vector-effect="non-scaling-stroke"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+
+          <p class="text-blue-gray">
+            Build, train, and deploy AI apps, and create AI agents with a suite
+            of simple-to-use tools and GPU compute.
+          </p>
+
+          <a
+            href="https://www.digitalocean.com/products/ai-ml"
+            class="relative flex w-max items-center gap-3 font-semibold after:bg-black"
+          >
+            Learn more
+            <svg
+              viewBox="0 0 18 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4"
+            >
+              <path
+                d="M12.6033 1.27344L16.6033 5.77344L12.6033 10.2734"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M1.60327 5.77344H16.6033"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <!--  -->
+        <div
+          class="flex flex-col gap-6 ring-2 ring-blue-200 bg-light-blue p-8 pb-10 rounded-2xl col-span-6 md:col-span-3 lg:col-span-2"
+        >
+          <div class="flex gap-4 items-center">
+            <svg class="text-blue-700 w-12 h-12">
+              <use href="public/spritesheet.svg#icon--app-platform"></use>
+            </svg>
+            <h3 class="font-bold text-xl">App Platform</h3>
+          </div>
+
+          <svg viewBox="0 0 1 0.002" preserveAspectRatio="none">
+            <path
+              d="M0 0 l12 0"
+              stroke="#A9B3CA"
+              stroke-width="1"
+              stroke-dasharray="4 8"
+              vector-effect="non-scaling-stroke"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+
+          <p class="text-blue-gray">
+            App Platform is our fully-managed PaaS solution to get your app to
+            market fast that's super simple to set up and cost-effective.
+          </p>
+
+          <a
+            href="https://www.digitalocean.com/products/app-platform"
+            class="relative flex w-max items-center gap-3 font-semibold after:bg-black"
+          >
+            Learn more
+            <svg
+              viewBox="0 0 18 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4"
+            >
+              <path
+                d="M12.6033 1.27344L16.6033 5.77344L12.6033 10.2734"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M1.60327 5.77344H16.6033"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <!--  -->
+        <div
+          class="flex flex-col gap-6 ring-2 ring-blue-200 bg-light-blue p-8 pb-10 rounded-2xl col-span-6 md:col-span-3 lg:col-span-2"
+        >
+          <div class="flex gap-4 items-center">
+            <svg class="text-blue-700 w-12 h-12">
+              <use href="public/spritesheet.svg#icon--managed-database"></use>
+            </svg>
+            <h3 class="font-bold text-xl">Managed databases</h3>
+          </div>
+
+          <svg viewBox="0 0 1 0.002" preserveAspectRatio="none">
+            <path
+              d="M0 0 l12 0"
+              stroke="#A9B3CA"
+              stroke-width="1"
+              stroke-dasharray="4 8"
+              vector-effect="non-scaling-stroke"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+
+          <p class="text-blue-gray">
+            Managed MongoDB, Kafka, MySQL, PostgreSQL, and Caching let you focus
+            on your apps while we update and scale your databases.
+          </p>
+
+          <a
+            href="https://www.digitalocean.com/products/managed-databases"
+            class="relative flex w-max items-center gap-3 font-semibold after:bg-black"
+          >
+            Learn more
+            <svg
+              viewBox="0 0 18 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4"
+            >
+              <path
+                d="M12.6033 1.27344L16.6033 5.77344L12.6033 10.2734"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M1.60327 5.77344H16.6033"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <!--  -->
+        <div
+          class="flex flex-col gap-6 ring-2 ring-blue-200 bg-light-blue p-8 pb-10 rounded-2xl col-span-6 md:col-span-3 lg:col-span-2"
+        >
+          <div class="flex gap-4 items-center">
+            <svg class="text-blue-700 w-12 h-12">
+              <use href="public/spritesheet.svg#icon--storage"></use>
+            </svg>
+            <h3 class="font-bold text-xl">Storage</h3>
+          </div>
+          <svg viewBox="0 0 1 0.002" preserveAspectRatio="none">
+            <path
+              d="M0 0 l12 0"
+              stroke="#A9B3CA"
+              stroke-width="1"
+              stroke-dasharray="4 8"
+              vector-effect="non-scaling-stroke"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+
+          <p class="text-blue-gray">
+            DigitalOcean
+            <a
+              class="underline text-blue-700"
+              href="https://www.digitalocean.com/products/spaces"
+              >Spaces object storage</a
+            >
+            and
+            <a
+              class="underline text-blue-700"
+              href="https://www.digitalocean.com/products/block-storage"
+              >Volumes block storage</a
+            >are business-ready storage solutions.
+          </p>
+
+          <a
+            href="#"
+            class="relative flex w-max items-center gap-3 font-semibold after:bg-black"
+          >
+            Learn more
+            <svg
+              viewBox="0 0 18 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4"
+            >
+              <path
+                d="M12.6033 1.27344L16.6033 5.77344L12.6033 10.2734"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M1.60327 5.77344H16.6033"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#caecff] py-20 px-6">
+      <h2 class="text-[28px] text-center font-bold">
+        Benefits to activate the builder in you
+      </h2>
+      <p class="text-blue-gray text-center mb-16 max-w-[40rem] mx-auto">
+        From simple tools and predictable pricing to support designed for
+        growing businesses, DigitalOcean's cloud is built to serve the unique
+        needs of startups and SMBs.
+      </p>
+
+      <!--  -->
+
+      <div class="grid grid-cols-4 gap-6 max-w-[68rem] mx-auto">
+        <div
+          class="p-8 pb-10 bg-soft-white flex flex-col gap-2 rounded-2xl col-span-4 md:col-span-2"
+        >
+          <img
+            class="h-20 w-20 mb-2"
+            src="./public/boat.svg"
+            alt="Photo of a Boat"
+          />
+          <h3 class="font-bold text-2xl">
+            Build and ship faster using simple tools
+          </h3>
+          <p class="text-blue-gray">
+            All of our products are built with simplicity at their core, so you
+            can spend your time focusing on building apps, not infrastructure.
+          </p>
+        </div>
+
+        <div
+          class="p-8 pb-10 bg-soft-white flex flex-col gap-2 rounded-2xl col-span-4 md:col-span-2"
+        >
+          <img
+            class="h-20 w-20 mb-2"
+            src="./public/growth.svg"
+            alt="Photo of an Icon which represents Growth"
+          />
+          <h3 class="font-bold text-2xl">
+            Grow profitably with predictable cloud costs
+          </h3>
+          <p class="text-blue-gray">
+            Our predictable pricing and leading price-to-performance ratio
+            contribute to an ROI of 186%,
+            <a
+              href="https://www.digitalocean.com/reports/forrester-total-economic-impact-study"
+              >according to a Forrester study.</a
+            >
+          </p>
+        </div>
+
+        <div
+          class="p-8 pb-10 bg-soft-white flex flex-col gap-2 rounded-2xl col-span-4 md:col-span-2"
+        >
+          <img
+            class="h-20 w-20 mb-2"
+            src="./public/support.svg"
+            alt="Icon representing customer support"
+          />
+          <h3 class="font-bold text-2xl">
+            Reduce your roadblocks with dedicated support
+          </h3>
+          <p class="text-blue-gray">
+            Get free, personalized support or upgrade to paid plans to receive
+            dedicated help and faster response times.
+          </p>
+        </div>
+
+        <div
+          class="p-8 pb-10 bg-soft-white flex flex-col gap-2 rounded-2xl col-span-4 md:col-span-2"
+        >
+          <img
+            class="h-20 w-20 mb-2"
+            src="./public/customer-experience.svg"
+            alt="An Icon representing customer-experience"
+          />
+          <h3 class="font-bold text-2xl">
+            Improve customer experience by building on a reliable platform
+          </h3>
+          <p class="text-blue-gray">
+            Deliver superior customer experience with our globally distributed
+            platform, minimal downtime, and intuitive products.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="w-full px-6 py-20 bg-soft-white">
+      <div
+        class="p-8 md:p-12 md:pt-10 pb-10 rounded-lg shadow-custom max-w-[54rem] mx-auto"
+      >
+        <div
+          class="flex flex-col md:flex-row gap-6 md:gap-12 items-center md:items-start"
+        >
+          <img
+            src="./public/idc_logo.svg"
+            class="w-[115px] md:w-[188px] aspect-auto"
+            alt="IDC logo"
+          />
+          <div class="flex flex-col gap-8">
+            <q class="font-inter font-bold text-lg">
+              DigitalOcean's blend of intentional simplicity, affordability and
+              flexibility in its cloud services makes it an appealing option for
+              individual developers, high growth startups, and more generally
+              ISVs and SMEs (small and medium enterprises) seeking a robust
+              platform alternative from the hyperscalers. It's a business ready
+              cloud - making it easy for growing companies to attain momentum
+              and scale sustainably.
+            </q>
+
+            <figure class="flex flex-col gap-4 md:flex-row">
+              <img
+                class="w-12 aspect-square rounded-full"
+                src="./public/dave_mc.png"
+                alt="Picture of Dave McCarthy, Research Vice President at IDC"
+              />
+              <figcaption class="font-inter font-bold flex flex-col">
+                Dave McCarthy
+                <span class="font-inter font-normal"
+                  >Research Vice President, IDC</span
+                >
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-20 px-6 overflow-hidden">
+      <div
+        class="bg-blue-600 rounded-xl flex flex-col lg:flex-row max-w-[68rem] mx-auto"
+      >
+        <div class="p-6">
+          <h2 class="font-bold text-white text-xl">
+            See our products in action
+          </h2>
+          <p class="text-white mb-2">
+            heck out our brief product tours to see how simple, easy, and
+            pleasant it is to use DigitalOcean's cloud hosting products.
+          </p>
+          <a
+            href="https://www.digitalocean.com/product-tours"
+            class="relative flex w-max items-center gap-3 text-white after:bg-white"
+          >
+            Take a tour
+            <svg
+              viewBox="0 0 18 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4"
+            >
+              <path
+                d="M12.6033 1.27344L16.6033 5.77344L12.6033 10.2734"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M1.60327 5.77344H16.6033"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <img
+          class="object-contain w-full"
+          src="./public/submarine.svg"
+          alt="Picture of a submarine"
+        />
+      </div>
+    </div>
+    <div class="px-6">
+      <div
+        class="flex flex-col bg-[#b5f6ff] md:bg-[url('/public/wave.svg')] md:p-[4rem_1.5rem_5rem] bg-no-repeat bg-bottom max-w-[68rem] mx-auto overflow-hidden rounded-lg"
+      >
+        <div class="p-[1.5rem_1rem_0] md:p-0">
+          <h2 class="text-4xl font-bold text-center mb-4">
+            Get started for Free
+          </h2>
+          <p class="text-blue-gray mx-auto text-center max-w-[26rem] mb-10">
+            Sign up and get $200 in credit for your first 60 days with
+            DigitalOcean.*
+          </p>
+          <a
+            class="bg-blue-700 text-white font-bold after:bg-white py-2 px-6 block w-max mx-auto rounded-3xl"
+            href="#"
+            >Get started</a
+          >
+        </div>
+        <img
+          class="w-full aspect-[1088/328] md:hidden"
+          src="./public/wave.svg"
+          alt="Picture of a wave"
+        />
+      </div>
+      <p class="text-xs text-center text-blue-gray mt-10">
+        *This promotional offer applies to new accounts only.
+      </p>
+    </div>
+
+    <footer class="py-32 px-6 bg-soft-white">
+      <!-- footer items after 768px screen width -->
+      <div
+        class="hidden md:grid md:grid-cols-[repeat(auto-fill,_minmax(12rem,_1fr))] gap-8 max-w-[68rem] mx-auto"
+      >
+        <!-- Company Section -->
+        <div>
+          <h2 class="font-bold font-inter">Company</h2>
+          <ul class="mt-2 space-y-1 font-inter">
+            <li><a href="#" class="text-blue-gray text-sm">About</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">Leadership</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">Blog</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">Careers</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">Customers</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">Partners</a></li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Referral Program</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Affiliate Program</a>
+            </li>
+            <li><a href="#" class="text-blue-gray text-sm">Press</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">Legal</a></li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Privacy Policy</a>
+            </li>
+            <li><a href="#" class="text-blue-gray text-sm">Security</a></li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Investor Relations</a>
+            </li>
+            <li><a href="#" class="text-blue-gray text-sm">DO Impact</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">Nonprofits</a></li>
+          </ul>
+        </div>
+
+        <!-- Products Section -->
+        <div>
+          <h2 class="font-bold">Products</h2>
+          <ul class="mt-2 space-y-1 font-inter">
+            <li><a href="#" class="text-blue-gray text-sm">Overview</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">Droplets</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">Kubernetes</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">Functions</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">App Platform</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">GPU Droplets</a></li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">1-Click Models</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">GenAI Platform</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Bare Metal GPUs</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Load Balancers</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Managed Databases</a>
+            </li>
+            <li><a href="#" class="text-blue-gray text-sm">Spaces</a></li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Block Storage</a>
+            </li>
+            <li><a href="#" class="text-blue-gray text-sm">API</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">Uptime</a></li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm"
+                >Identity Access Management</a
+              >
+            </li>
+            <li><a href="#" class="text-blue-gray text-sm">Cloudways</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources Section -->
+        <div>
+          <h2 class="font-bold">Resources</h2>
+          <ul class="mt-2 space-y-1 font-inter">
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Community Tutorials</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Community Q&A</a>
+            </li>
+            <li><a href="#" class="text-blue-gray text-sm">CSS-Tricks</a></li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Write for DOnations</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Currents Research</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm"
+                >Hatch Startup Program</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Wavemakers Program</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Compass Council</a>
+            </li>
+            <li><a href="#" class="text-blue-gray text-sm">Open Source</a></li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Newsletter Signup</a>
+            </li>
+            <li><a href="#" class="text-blue-gray text-sm">Marketplace</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">Pricing</a></li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Pricing Calculator</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Documentation</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Release Notes</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Code of Conduct</a>
+            </li>
+            <li><a href="#" class="text-blue-gray text-sm">Shop Swag</a></li>
+          </ul>
+        </div>
+
+        <!-- Solutions Section -->
+        <div>
+          <h2 class="font-bold">Resources</h2>
+          <ul class="mt-2 space-y-1 font-inter">
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Website Hosting</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">VPS Hosting</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Web & Mobile Apps</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Game Development</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Streaming</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">VPN</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">SaaS Platforms</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm"
+                >Cloud Hosting for Blockchain</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Startup Resources</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact section -->
+
+        <div>
+          <h2 class="font-bold">Contact</h2>
+          <ul class="mt-2 space-y-1 font-inter">
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Support</a>
+            </li>
+            <li><a href="#" class="text-blue-gray text-sm">Sales</a></li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Report Abuse</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">System Status</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Share your ideas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer items for small screens (hidden after 768px) -->
+      <div class="md:hidden">
+        <!-- Company Section -->
+
+        <details class="group py-2 border-b-[1px] border-[#d6dcea]">
+          <summary
+            class="flex justify-between items-center cursor-pointer font-bold list-none"
+          >
+            <h2 class="font-inter text-charcoal">Company</h2>
+            <span class="text-sm group-open:rotate-180 transition-transform">
+              <svg class="text-blue-gray h-4 w-4">
+                <use href="./public/spritesheet.svg#icon--Arrow-Down"></use>
+              </svg>
+            </span>
+          </summary>
+          <ul class="mt-2 space-y-1 font-inter">
+            <li><a href="#" class="text-blue-gray text-sm">About</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">Leadership</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">Blog</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">Careers</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">Customers</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">Partners</a></li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Referral Program</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Affiliate Program</a>
+            </li>
+            <li><a href="#" class="text-blue-gray text-sm">Press</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">Legal</a></li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Privacy Policy</a>
+            </li>
+            <li><a href="#" class="text-blue-gray text-sm">Security</a></li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Investor Relations</a>
+            </li>
+            <li><a href="#" class="text-blue-gray text-sm">DO Impact</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">Nonprofits</a></li>
+          </ul>
+        </details>
+
+        <!-- Products Section -->
+
+        <details class="group py-2 border-b-[1px] border-[#d6dcea]">
+          <summary
+            class="flex justify-between items-center cursor-pointer font-bold list-none"
+          >
+            <h2 class="font-inter text-charcoal">Products</h2>
+            <span
+              class="arrow text-sm group-open:rotate-180 transition-transform"
+            >
+              <svg class="text-blue-gray h-4 w-4">
+                <use href="./public/spritesheet.svg#icon--Arrow-Down"></use>
+              </svg>
+            </span>
+          </summary>
+          <ul class="mt-2 space-y-1 font-inter">
+            <li><a href="#" class="text-blue-gray text-sm">Overview</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">Droplets</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">Kubernetes</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">Functions</a></li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">App Platform</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">GPU Droplets</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">1-Click Models</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">GenAI Platform</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Bare Metal GPUs</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Load Balancers</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Managed Databases</a>
+            </li>
+            <li><a href="#" class="text-blue-gray text-sm">Spaces</a></li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Block Storage</a>
+            </li>
+            <li><a href="#" class="text-blue-gray text-sm">API</a></li>
+            <li><a href="#" class="text-blue-gray text-sm">Uptime</a></li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm"
+                >Identity Access Management</a
+              >
+            </li>
+            <li><a href="#" class="text-blue-gray text-sm">Cloudways</a></li>
+          </ul>
+        </details>
+
+        <!-- Resources Section -->
+
+        <details class="group py-2 border-b-[1px] border-[#d6dcea]">
+          <summary
+            class="flex justify-between items-center cursor-pointer font-bold list-none"
+          >
+            <h2 class="font-inter text-charcoal">Resources</h2>
+            <span
+              class="arrow text-sm group-open:rotate-180 transition-transform"
+            >
+              <svg class="text-blue-gray h-4 w-4">
+                <use href="./public/spritesheet.svg#icon--Arrow-Down"></use>
+              </svg>
+            </span>
+          </summary>
+          <ul class="mt-2 space-y-1 font-inter">
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Community Tutorials</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Community Q&A</a>
+            </li>
+            <li><a href="#" class="text-blue-gray text-sm">CSS-Tricks</a></li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Write for DOnations</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Currents Research</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm"
+                >Hatch Startup Program</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Wavemakers Program</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Compass Council</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Open Source</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Newsletter Signup</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Marketplace</a>
+            </li>
+            <li><a href="#" class="text-blue-gray text-sm">Pricing</a></li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Pricing Calculator</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Documentation</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Release Notes</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Code of Conduct</a>
+            </li>
+            <li><a href="#" class="text-blue-gray text-sm">Shop Swag</a></li>
+          </ul>
+        </details>
+
+        <!-- Solutions Section -->
+
+        <details class="group py-2 border-b-[1px] border-[#d6dcea]">
+          <summary
+            class="flex justify-between items-center cursor-pointer font-bold list-none"
+          >
+            <h2 class="font-inter text-charcoal">Solutions</h2>
+            <span
+              class="arrow text-sm group-open:rotate-180 transition-transform"
+            >
+              <svg class="text-blue-gray h-4 w-4">
+                <use href="./public/spritesheet.svg#icon--Arrow-Down"></use>
+              </svg>
+            </span>
+          </summary>
+          <ul class="mt-2 space-y-1 font-inter">
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Website Hosting</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">VPS Hosting</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Web & Mobile Apps</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Game Development</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Streaming</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">VPN</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">SaaS Platforms</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm"
+                >Cloud Hosting for Blockchain</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Startup Resources</a>
+            </li>
+          </ul>
+        </details>
+
+        <!-- Contact Section -->
+
+        <details class="group py-2 border-b-[1px] border-[#d6dcea]">
+          <summary
+            class="flex justify-between items-center cursor-pointer font-bold list-none"
+          >
+            <h2 class="font-inter text-charcoal">Contact</h2>
+            <span
+              class="arrow text-sm group-open:rotate-180 transition-transform"
+            >
+              <svg class="text-blue-gray h-4 w-4">
+                <use href="./public/spritesheet.svg#icon--Arrow-Down"></use>
+              </svg>
+            </span>
+          </summary>
+          <ul class="mt-2 space-y-1 font-inter">
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Support</a>
+            </li>
+            <li><a href="#" class="text-blue-gray text-sm">Sales</a></li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Report Abuse</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">System Status</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-gray text-sm">Share your ideas</a>
+            </li>
+          </ul>
+        </details>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row gap-8 items-center md:justify-between text-blue-gray mt-20 max-w-[68rem] mx-auto"
+      >
+        <div class="flex flex-wrap justify-center gap-4 font-inter text-sm">
+          <svg class="text-blue-700 h-6 w-6">
+            <use href="./public/spritesheet.svg#icon-digital-ocean"></use>
+          </svg>
+          © 2025 DigitalOcean, LLC.
+          <a href="#">Sitemap.</a>
+          <a href="#">Cookie Preferences</a>
+        </div>
+
+        <div
+          class="flex flex-wrap items-center justify-center gap-4 w-48 md:w-max mx-auto md:mx-0"
+        >
+          <svg class="text-blue-gray h-6 w-6">
+            <use href="./public/spritesheet.svg#icon--Twitter"></use>
+          </svg>
+          <svg class="text-blue-gray h-6 w-6">
+            <use href="./public/spritesheet.svg#icon--Instagram"></use>
+          </svg>
+          <svg class="text-blue-gray h-6 w-6">
+            <use href="./public/spritesheet.svg#icon--Facebook"></use>
+          </svg>
+          <svg class="text-blue-gray h-6 w-6">
+            <use href="./public/spritesheet.svg#icon--Discord"></use>
+          </svg>
+          <svg class="text-blue-gray h-6 w-6">
+            <use href="./public/spritesheet.svg#icon--Reddit"></use>
+          </svg>
+          <svg class="text-blue-gray h-6 w-6">
+            <use href="./public/spritesheet.svg#icon--Youtube"></use>
+          </svg>
+          <svg class="text-blue-gray h-6 w-6">
+            <use href="./public/spritesheet.svg#icon--Linkedin"></use>
+          </svg>
+          <svg class="text-blue-gray h-6 w-6">
+            <use href="./public/spritesheet.svg#icon--Github"></use>
+          </svg>
+          <svg class="text-blue-gray h-6 w-6">
+            <use href="./public/spritesheet.svg#icon--Glassdoor"></use>
+          </svg>
+          <svg class="text-blue-gray h-6 w-6">
+            <use href="./public/spritesheet.svg#icon--BuiltInNYC"></use>
+          </svg>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
