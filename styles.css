@@ -58,3 +58,8 @@ a:hover::after {
   left: 0;
   top: 50%;
 }
+
+.selected {
+  background-color: #e3e8f4;
+  color: #000c2a;
+}

@@ -688,6 +688,10 @@ p {
   aspect-ratio: 1/2;
 }
 
+.aspect-\[1057\/609\] {
+  aspect-ratio: 1057/609;
+}
+
 .aspect-\[1088\/328\] {
   aspect-ratio: 1088/328;
 }
@@ -865,6 +869,10 @@ p {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-9 {
+  gap: 2.25rem;
 }
 
 .space-y-1 > :not([hidden]) ~ :not([hidden]) {
@@ -1096,6 +1104,10 @@ p {
   padding-bottom: 2.5rem;
 }
 
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -1297,6 +1309,11 @@ a:hover::after {
   top: 50%;
 }
 
+.selected {
+  background-color: #e3e8f4;
+  color: #000c2a;
+}
+
 .after\:bg-charcoal::after {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
@@ -1319,6 +1336,11 @@ a:hover::after {
   background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-blue-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
@@ -1332,6 +1354,11 @@ a:hover::after {
 .hover\:text-soft-white:hover {
   --tw-text-opacity: 1;
   color: rgb(249 250 254 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .focus\:outline-none:focus {
