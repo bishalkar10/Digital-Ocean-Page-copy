@@ -46,3 +46,15 @@ a:hover::after {
 .nav-item:hover .menu {
   display: block;
 }
+
+.nav-item-product {
+  position: relative;
+}
+.nav-item-product::before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 50%;
+}
