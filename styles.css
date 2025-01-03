@@ -27,7 +27,7 @@ a::after {
   bottom: 0;
   left: 0;
   width: 0;
-  height: 2px;
+  height: 1px;
   transition: width 0.3s ease;
 }
 
