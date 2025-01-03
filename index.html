@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Digital Ocean Homepage</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
+    <meta
+      name="description"
+      content="Reliable cloud infrastructure for developers and businesses. Host your websites, apps, and databases with ease on our scalable platform."
     />
+    <meta name="keywords" content="digital ocean, cloud hosting, cloud infrastructure, web hosting, virtual servers, developers hosting, cloud computing" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,18 +19,14 @@
     />
   </head>
   <body>
-    <header
-      class="bg-white fixed z-50 top-0 left-0 right-0 px-6 py-4 flex items-center justify-between border-b-2 border-blue-gray"
-    >
+    <header class="bg-white fixed z-50 top-0 left-0 right-0 px-6 py-4 flex items-center justify-between border-b-2 border-blue-gray">
       <svg class="text-blue-700 h-8 w-8">
         <use href="./public/spritesheet.svg#icon-digital-ocean"></use>
       </svg>
 
       <ul class="hidden lg:flex">
         <li class="nav-item group">
-          <div
-            class="nav-item-product text-blue-gray font-inter flex gap-2 items-center px-4 py-2 hover:bg-[#eff2fb] rounded-2xl"
-          >
+          <div class="nav-item-product text-blue-gray font-inter flex gap-2 items-center px-4 py-2 hover:bg-[#eff2fb] rounded-2xl">
             Products
             <span class="text-sm group-hover:rotate-180 transition-transform">
               <svg class="text-blue-gray h-4 w-4">
@@ -38,39 +36,26 @@
           </div>
 
           <!-- Products dropdown -->
-          <div
-            class="menu w-full h-[calc(100vh-4rem)] overflow-y-scroll absolute bg-white top-[calc(100%+2px)] left-0 px-6 pt-6 pb-20 font-inter"
-          >
+          <div class="menu w-full h-[calc(100vh-4rem)] overflow-y-scroll absolute bg-white top-[calc(100%+2px)] left-0 px-6 pt-6 pb-20 font-inter">
             <div class="grid grid-cols-9 gap-14 bg-white">
               <!-- 1st column Featured Productuts -->
               <div class="col-span-3 p-8 border-2 bg-light-blue rounded-3xl">
-                <h2 class="text-sm mb-3 pl-3 text-[#0a1632] font-semibold">
-                  Featured Products
-                </h2>
+                <h2 class="text-sm mb-3 pl-3 text-[#0a1632] font-semibold">Featured Products</h2>
                 <ul class="flex flex-col" aria-label="Featured Products">
                   <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
-                    <a
-                      href="#"
-                      aria-label="Droplets - Scalable virtual machines"
-                    >
+                    <a href="#" aria-label="Droplets - Scalable virtual machines">
                       <p class="text-charcoal text-lg">Droplets</p>
                       <p class="text-blue-gray">Scalable virtual machines</p>
                     </a>
                   </li>
                   <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
-                    <a
-                      href="#"
-                      aria-label="Kubernetes - Scalable virtual machines"
-                    >
+                    <a href="#" aria-label="Kubernetes - Scalable virtual machines">
                       <p class="text-charcoal text-lg">Kubernetes</p>
                       <p class="text-blue-gray">Scalable virtual machines</p>
                     </a>
                   </li>
                   <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
-                    <a
-                      href="#"
-                      aria-label="AI / ML - Build and scale AI models"
-                    >
+                    <a href="#" aria-label="AI / ML - Build and scale AI models">
                       <p class="text-charcoal text-lg">AI / ML</p>
                       <p class="text-blue-gray">Build and scale AI models</p>
                     </a>
@@ -82,10 +67,7 @@
                     </a>
                   </li>
                   <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
-                    <a
-                      href="#"
-                      aria-label="App Platform - Get apps to market faster"
-                    >
+                    <a href="#" aria-label="App Platform - Get apps to market faster">
                       <p class="text-charcoal text-lg">App Platform</p>
                       <p class="text-blue-gray">Get apps to market faster</p>
                     </a>
@@ -97,114 +79,51 @@
               <div class="flex flex-col gap-4 col-span-2 py-10">
                 <h2 class="text-sm text-[#0a1632] font-semibold">Compute</h2>
                 <ul class="flex flex-col gap-2" aria-label="Compute Products">
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="Droplets">Droplets</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="Kubernetes">Kubernetes</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="CPU-Optimized Droplets"
-                      >CPU-Optimized Droplets</a
-                    >
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="Functions">Functions</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="App Platform">App Platform</a>
-                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="Droplets">Droplets</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="Kubernetes">Kubernetes</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="CPU-Optimized Droplets">CPU-Optimized Droplets</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="Functions">Functions</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="App Platform">App Platform</a></li>
                 </ul>
 
                 <h2 class="text-sm text-[#0a1632] font-semibold">AI /ML</h2>
                 <ul class="flex flex-col gap-2" aria-label="AI/ML Products">
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="GPU Droplets">GPU Droplets</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="1-Click Models">1-Click Models</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="GenAI Platform">GenAI Platform</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="Bare Metal GPUs">Bare Metal GPUs</a>
-                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="GPU Droplets">GPU Droplets</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="1-Click Models">1-Click Models</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="GenAI Platform">GenAI Platform</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="Bare Metal GPUs">Bare Metal GPUs</a></li>
                 </ul>
 
-                <h2 class="text-sm text-[#0a1632] font-semibold">
-                  Backups & Snapshots
-                </h2>
-                <ul
-                  class="flex flex-col gap-2"
-                  aria-label="Backups & Snapshots Products"
-                >
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="Backups">Backups</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="Snapshots">Snapshots</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="Snapshooter">Snapshooter</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="Bare Metal GPUs">Bare Metal GPUs</a>
-                  </li>
+                <h2 class="text-sm text-[#0a1632] font-semibold">Backups & Snapshots</h2>
+                <ul class="flex flex-col gap-2" aria-label="Backups & Snapshots Products">
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="Backups">Backups</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="Snapshots">Snapshots</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="Snapshooter">Snapshooter</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="Bare Metal GPUs">Bare Metal GPUs</a></li>
                 </ul>
               </div>
 
               <!-- 3rd Column -->
               <div class="flex flex-col gap-4 col-span-2 py-10">
                 <h2 class="text-sm text-[#0a1632] font-semibold">Networking</h2>
-                <ul
-                  class="flex flex-col gap-2"
-                  aria-label="Networking Products"
-                >
+                <ul class="flex flex-col gap-2" aria-label="Networking Products">
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="Virtual Private Cloud (VPC)"
-                      >Virtual Private Cloud (VPC)</a
-                    >
+                    <a href="#" aria-label="Virtual Private Cloud (VPC)">Virtual Private Cloud (VPC)</a>
                   </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="Cloud Firewalls">Cloud Firewalls</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="Load Balancers">Load Balancers</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="DNS">DNS</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="DDoS Protection">DDoS Protection</a>
-                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="Cloud Firewalls">Cloud Firewalls</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="Load Balancers">Load Balancers</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="DNS">DNS</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="DDoS Protection">DDoS Protection</a></li>
                 </ul>
 
-                <h2 class="text-sm text-[#0a1632] font-semibold">
-                  Managed Databases
-                </h2>
-                <ul
-                  class="flex flex-col gap-2"
-                  aria-label="Managed Databases Products"
-                >
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="MongoDB">MongoDB</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="Kafka">Kafka</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="MySQL">MySQL</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="PostgreSQL">PostgreSQL</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="Caching">Caching</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="OpenSearch">OpenSearch</a>
-                  </li>
+                <h2 class="text-sm text-[#0a1632] font-semibold">Managed Databases</h2>
+                <ul class="flex flex-col gap-2" aria-label="Managed Databases Products">
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="MongoDB">MongoDB</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="Kafka">Kafka</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="MySQL">MySQL</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="PostgreSQL">PostgreSQL</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="Caching">Caching</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="OpenSearch">OpenSearch</a></li>
                 </ul>
               </div>
 
@@ -213,20 +132,14 @@
                 <h2 class="text-sm text-[#0a1632] font-semibold">Storage</h2>
                 <ul class="flex flex-col gap-2" aria-label="Storage Products">
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="Spaces Object Storage"
-                      >Spaces Object Storage</a
-                    >
+                    <a href="#" aria-label="Spaces Object Storage">Spaces Object Storage</a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="Volume Block Storage"
-                      >Volume Block Storage</a
-                    >
+                    <a href="#" aria-label="Volume Block Storage">Volume Block Storage</a>
                   </li>
                 </ul>
 
-                <h2 class="text-sm text-[#0a1632] font-semibold">
-                  Developer Tools
-                </h2>
+                <h2 class="text-sm text-[#0a1632] font-semibold">Developer Tools</h2>
                 <ul class="flex flex-col gap-2" aria-label="Developer Tools">
                   <li class="font-medium text-blue-gray hover:text-charcoal">
                     <a href="#" aria-label="API">API</a>
@@ -244,19 +157,12 @@
                     <a href="#" aria-label="Uptime">Uptime</a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#" aria-label="Identity Access Management"
-                      >Identity Access Management</a
-                    >
+                    <a href="#" aria-label="Identity Access Management">Identity Access Management</a>
                   </li>
                 </ul>
 
-                <h2 class="text-sm text-[#0a1632] font-semibold">
-                  Cloud Website Hosting
-                </h2>
-                <ul
-                  class="flex flex-col gap-2"
-                  aria-label="Cloud Website Hosting Products"
-                >
+                <h2 class="text-sm text-[#0a1632] font-semibold">Cloud Website Hosting</h2>
+                <ul class="flex flex-col gap-2" aria-label="Cloud Website Hosting Products">
                   <li class="font-medium text-blue-gray hover:text-charcoal">
                     <a href="#" aria-label="Cloudways">Cloudways</a>
                   </li>
@@ -266,9 +172,7 @@
           </div>
         </li>
         <li class="nav-item group">
-          <div
-            class="nav-item-product text-blue-gray font-inter flex gap-2 items-center px-4 py-2 hover:bg-[#eff2fb] rounded-2xl"
-          >
+          <div class="nav-item-product text-blue-gray font-inter flex gap-2 items-center px-4 py-2 hover:bg-[#eff2fb] rounded-2xl">
             Solutions
             <span class="text-sm group-hover:rotate-180 transition-transform">
               <svg class="text-blue-gray h-4 w-4">
@@ -278,22 +182,16 @@
           </div>
 
           <!-- Solutions Dropdown -->
-          <div
-            class="menu w-full h-[calc(100vh-4rem)] overflow-y-scroll absolute bg-white top-[calc(100%+2px)] left-0 px-6 pt-6 pb-20 font-inter"
-          >
+          <div class="menu w-full h-[calc(100vh-4rem)] overflow-y-scroll absolute bg-white top-[calc(100%+2px)] left-0 px-6 pt-6 pb-20 font-inter">
             <div class="grid grid-cols-4 gap-10 bg-white">
               <!-- 1st column -->
               <ul class="flex flex-col gap-6">
                 <li class="flex flex-col gap-2">
-                  <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
-                    href="#"
+                  <a class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal" href="#"
                     >AI Machine Learning
                     <i class="fa-solid fa-arrow-right text-sm"></i>
                   </a>
-                  <p class="text-blue-gray text-sm">
-                    Develop, train, and deploy AI apps
-                  </p>
+                  <p class="text-blue-gray text-sm">Develop, train, and deploy AI apps</p>
                   <ul class="flex flex-wrap gap-2">
                     <li>
                       <a
@@ -319,26 +217,18 @@
                   </ul>
                 </li>
                 <li class="flex flex-col gap-2">
-                  <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
-                    href="#"
+                  <a class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal" href="#"
                     >BlockChain
                     <i class="fa-solid fa-arrow-right text-sm"></i>
                   </a>
-                  <p class="text-blue-gray text-sm">
-                    Infrastructure for decentralized apps
-                  </p>
+                  <p class="text-blue-gray text-sm">Infrastructure for decentralized apps</p>
                 </li>
                 <li class="flex flex-col gap-2">
-                  <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
-                    href="#"
+                  <a class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal" href="#"
                     >Blogs, Forums and Content Websites
                     <i class="fa-solid fa-arrow-right text-sm"></i>
                   </a>
-                  <p class="text-blue-gray text-sm">
-                    Lightning-fast, reliable CMS hosting
-                  </p>
+                  <p class="text-blue-gray text-sm">Lightning-fast, reliable CMS hosting</p>
                   <ul class="flex flex-wrap gap-2">
                     <li>
                       <a
@@ -364,15 +254,11 @@
                   </ul>
                 </li>
                 <li class="flex flex-col gap-2">
-                  <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
-                    href="#"
+                  <a class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal" href="#"
                     >Data Analytics
                     <i class="fa-solid fa-arrow-right text-sm"></i>
                   </a>
-                  <p class="text-blue-gray text-sm">
-                    Real-time data processing at scale
-                  </p>
+                  <p class="text-blue-gray text-sm">Real-time data processing at scale</p>
                   <ul class="flex flex-wrap gap-2">
                     <li>
                       <a
@@ -394,15 +280,10 @@
               <!-- 2nd column -->
               <ul class="flex flex-col gap-6">
                 <li class="flex flex-col gap-2">
-                  <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
-                    href="#"
-                    >Developer Tools
-                    <i class="fa-solid fa-arrow-right text-sm"></i
+                  <a class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal" href="#"
+                    >Developer Tools <i class="fa-solid fa-arrow-right text-sm"></i
                   ></a>
-                  <p class="text-blue-gray text-sm">
-                    DevOps and CI/CD solutions
-                  </p>
+                  <p class="text-blue-gray text-sm">DevOps and CI/CD solutions</p>
                   <ul class="flex flex-wrap gap-2">
                     <li>
                       <a
@@ -421,15 +302,10 @@
                   </ul>
                 </li>
                 <li class="flex flex-col gap-2">
-                  <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
-                    href="#"
-                    >Digital Marketing Agencies
-                    <i class="fa-solid fa-arrow-right text-sm"></i
+                  <a class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal" href="#"
+                    >Digital Marketing Agencies <i class="fa-solid fa-arrow-right text-sm"></i
                   ></a>
-                  <p class="text-blue-gray text-sm">
-                    Power your clients websites and campaigns
-                  </p>
+                  <p class="text-blue-gray text-sm">Power your clients websites and campaigns</p>
                   <ul class="flex flex-wrap gap-2">
                     <li>
                       <a
@@ -448,14 +324,10 @@
                   </ul>
                 </li>
                 <li class="flex flex-col gap-2">
-                  <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
-                    href="#"
+                  <a class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal" href="#"
                     >Ecommerce <i class="fa-solid fa-arrow-right text-sm"></i
                   ></a>
-                  <p class="text-blue-gray text-sm">
-                    Build beatiful online storefronts
-                  </p>
+                  <p class="text-blue-gray text-sm">Build beatiful online storefronts</p>
                   <ul class="flex flex-wrap gap-2">
                     <li>
                       <a
@@ -481,14 +353,8 @@
                   </ul>
                 </li>
                 <li class="flex flex-col gap-2">
-                  <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
-                    href="#"
-                    >Game Development
-                  </a>
-                  <p class="text-blue-gray text-sm">
-                    Low-latency multiplayer servers
-                  </p>
+                  <a class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal" href="#">Game Development </a>
+                  <p class="text-blue-gray text-sm">Low-latency multiplayer servers</p>
                   <ul class="flex flex-wrap gap-2">
                     <li>
                       <a
@@ -503,35 +369,22 @@
               <!-- 3rd column -->
               <ul class="flex flex-col gap-6">
                 <li class="flex flex-col gap-2">
-                  <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
-                    href="#"
+                  <a class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal" href="#"
                     >IOT <i class="fa-solid fa-arrow-right text-sm"></i
                   ></a>
-                  <p class="text-blue-gray text-sm">
-                    Connect to the power of the cloud
-                  </p>
+                  <p class="text-blue-gray text-sm">Connect to the power of the cloud</p>
                 </li>
                 <li class="flex flex-col gap-2">
-                  <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
-                    href="#"
+                  <a class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal" href="#"
                     >ISVs <i class="fa-solid fa-arrow-right text-sm"></i
                   ></a>
-                  <p class="text-blue-gray text-sm">
-                    Streamlined ISV application development
-                  </p>
+                  <p class="text-blue-gray text-sm">Streamlined ISV application development</p>
                 </li>
                 <li class="flex flex-col gap-2">
-                  <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
-                    href="#"
-                    >Secure Web Hosting
-                    <i class="fa-solid fa-arrow-right text-sm"></i
+                  <a class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal" href="#"
+                    >Secure Web Hosting <i class="fa-solid fa-arrow-right text-sm"></i
                   ></a>
-                  <p class="text-blue-gray text-sm">
-                    Powerful protection DDoS and more
-                  </p>
+                  <p class="text-blue-gray text-sm">Powerful protection DDoS and more</p>
                   <ul class="flex flex-wrap gap-2">
                     <li>
                       <a
@@ -543,54 +396,31 @@
                   </ul>
                 </li>
                 <li class="flex flex-col gap-2">
-                  <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
-                    href="#"
-                    >Video Streaming
-                    <i class="fa-solid fa-arrow-right text-sm"></i
+                  <a class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal" href="#"
+                    >Video Streaming <i class="fa-solid fa-arrow-right text-sm"></i
                   ></a>
-                  <p class="text-blue-gray text-sm">
-                    High-bandwidth, low-latency delivery
-                  </p>
+                  <p class="text-blue-gray text-sm">High-bandwidth, low-latency delivery</p>
                 </li>
               </ul>
               <!-- 4th column -->
               <ul class="flex flex-col gap-6">
                 <li class="flex flex-col gap-2">
-                  <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
-                    href="#"
-                    >Web and Mobile Apps
-                    <i class="fa-solid fa-arrow-right text-sm"></i
+                  <a class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal" href="#"
+                    >Web and Mobile Apps <i class="fa-solid fa-arrow-right text-sm"></i
                   ></a>
-                  <p class="text-blue-gray text-sm">
-                    Simple cross-platform app hosting
-                  </p>
+                  <p class="text-blue-gray text-sm">Simple cross-platform app hosting</p>
                 </li>
                 <li class="flex flex-col gap-2">
-                  <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
-                    href="#"
-                    >Website Hosting
-                    <i class="fa-solid fa-arrow-right text-sm"></i
+                  <a class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal" href="#"
+                    >Website Hosting <i class="fa-solid fa-arrow-right text-sm"></i
                   ></a>
-                  <p class="text-blue-gray text-sm">
-                    Fast page loads and reliable site uptime
-                  </p>
+                  <p class="text-blue-gray text-sm">Fast page loads and reliable site uptime</p>
                 </li>
                 <li class="flex flex-col gap-2">
-                  <p
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center"
-                  >
-                    Questions?
-                  </p>
-                  <span
-                    class="bg-[#b5f6ff] p-4 rounded-2xl border-2 border-[#a5e0ea]"
-                    ><a
-                      class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
-                      href="#"
-                      >Talk to an expert
-                      <i class="fa-solid fa-arrow-right text-sm"></i></a
+                  <p class="text-charcoal font-semibold text-sm flex gap-2 items-center">Questions?</p>
+                  <span class="bg-[#b5f6ff] p-4 rounded-2xl border-2 border-[#a5e0ea]"
+                    ><a class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal" href="#"
+                      >Talk to an expert <i class="fa-solid fa-arrow-right text-sm"></i></a
                   ></span>
                 </li>
               </ul>
@@ -598,9 +428,7 @@
           </div>
         </li>
         <li class="nav-item group">
-          <div
-            class="nav-item-product text-blue-gray font-inter flex gap-2 items-center px-4 py-2 hover:bg-[#eff2fb] rounded-2xl"
-          >
+          <div class="nav-item-product text-blue-gray font-inter flex gap-2 items-center px-4 py-2 hover:bg-[#eff2fb] rounded-2xl">
             Developers
             <span class="text-sm group-hover:rotate-180 transition-transform">
               <svg class="text-blue-gray h-4 w-4">
@@ -610,30 +438,22 @@
           </div>
 
           <!-- Developers Dropdown -->
-          <div
-            class="menu w-full h-[calc(100vh-4rem)] overflow-y-scroll absolute bg-white top-[calc(100%+2px)] left-0 px-6 pt-6 pb-20 font-inter"
-          >
+          <div class="menu w-full h-[calc(100vh-4rem)] overflow-y-scroll absolute bg-white top-[calc(100%+2px)] left-0 px-6 pt-6 pb-20 font-inter">
             <div class="grid grid-cols-9 gap-10 bg-white">
               <div class="col-span-3 p-8 border-2 bg-light-blue rounded-3xl">
-                <p class="text-sm mb-3 pl-3 text-[#0a1632] font-semibold">
-                  Our Community
-                </p>
+                <p class="text-sm mb-3 pl-3 text-[#0a1632] font-semibold">Our Community</p>
                 <ul class="flex flex-col">
                   <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
                     <a href="#">
                       <p class="text-charcoal text-lg">Community Home</p>
-                      <p class="text-blue-gray">
-                        DevOps and development guides
-                      </p>
+                      <p class="text-blue-gray">DevOps and development guides</p>
                     </a>
                   </li>
                   <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
                     <a href="#">
                       <p class="text-charcoal text-lg flex gap-3 items-center">
                         CSS-Tricks
-                        <i
-                          class="fa-solid fa-arrow-right text-xs transform font-thin -rotate-45"
-                        ></i>
+                        <i class="fa-solid fa-arrow-right text-xs transform font-thin -rotate-45"></i>
                       </p>
                       <p class="text-blue-gray">All things web design</p>
                     </a>
@@ -641,122 +461,72 @@
                   <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
                     <a href="#">
                       <p class="text-charcoal text-lg">The Wave</p>
-                      <p class="text-blue-gray">
-                        Content to level up your business
-                      </p>
+                      <p class="text-blue-gray">Content to level up your business</p>
                     </a>
                   </li>
                 </ul>
               </div>
 
               <!-- 2nd column -->
-              <div class="flex flex-col gap-4 col-span-2 py-10">
-                <p class="text-sm text-[#0a1632] font-semibold">Resources</p>
+              <div class="flex flex-col gap-4 col-span-2 py-10" aria-labelledby="resources-heading">
+                <p id="resources-heading" class="text-sm text-[#0a1632] font-semibold">Resources</p>
                 <ul class="flex flex-col gap-2">
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="Visit Tutorials section">Tutorials</a></li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Tutorials</a>
+                    <a href="#" aria-label="Visit Questions and Answers section">Questions and Answers</a>
                   </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="Visit Marketplace section">Marketplace</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="Visit Tools section">Tools</a></li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Questions and Answers</a>
+                    <a href="#" aria-label="Visit Write and DOnations section">Write and DOnations</a>
                   </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="Visit Cloud Chats section">Cloud Chats</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="Visit Customer Stories section">Customer Stories</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#" aria-label="Visit DigitalOcean Blog section">DigitalOcean Blog</a></li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Marketplace</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Tools</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Write and DOnations</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Cloud Chats</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Customer Stories</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">DigitalOcean Blog</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Pricing Calculator</a>
+                    <a href="#" aria-label="Visit Pricing Calculator section">Pricing Calculator</a>
                   </li>
                 </ul>
               </div>
 
               <!-- 3rd column -->
-
               <div class="flex flex-col gap-4 col-span-2 py-10">
                 <p class="text-sm text-[#0a1632] font-semibold">Get Involved</p>
                 <ul class="flex flex-col gap-2">
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#">Hatch Startup Program</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#">Open Source Sponsorships</a></li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Hatch Startup Program</a>
+                    <a class="flex items-center gap-3" href="#">Hacktoberfest <i class="fa-solid fa-arrow-right text-xs transform font-thin -rotate-45"></i></a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Open Source Sponsorships</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a class="flex items-center gap-3" href="#"
-                      >Hacktoberfest
-                      <i
-                        class="fa-solid fa-arrow-right text-xs transform font-thin -rotate-45"
-                      ></i
+                    <a class="flex items-center gap-3" href="#">
+                      Deploy 2025
+                      <i class="fa-solid fa-arrow-right text-xs transform font-thin -rotate-45"></i
                     ></a>
                   </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a class="flex items-center gap-3" href="#"
-                      >Deploy 2025
-                      <i
-                        class="fa-solid fa-arrow-right text-xs transform font-thin -rotate-45"
-                      ></i
-                    ></a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">DO Impact</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Nonprofits</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Wavemakers Program</a>
-                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#">DO Impact</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#">Nonprofits</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#">Wavemakers Program</a></li>
                 </ul>
               </div>
 
               <div class="flex flex-col gap-4 col-span-2 py-10">
-                <p class="text-sm text-[#0a1632] font-semibold">
-                  Documentation
-                </p>
+                <p class="text-sm text-[#0a1632] font-semibold">Documentation</p>
                 <ul class="flex flex-col gap-2">
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Quickstart</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Compute</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Storage</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Managed Databases</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Containers</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Billing</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">API References</a>
-                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#">Quickstart</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#">Compute</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#">Storage</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#">Managed Databases</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#">Containers</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#">Billing</a></li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal"><a href="#">API References</a></li>
                 </ul>
               </div>
             </div>
           </div>
         </li>
         <li class="nav-item group">
-          <div
-            class="nav-item-product text-blue-gray font-inter flex gap-2 items-center px-4 py-2 hover:bg-[#eff2fb] rounded-2xl"
-          >
+          <div class="nav-item-product text-blue-gray font-inter flex gap-2 items-center px-4 py-2 hover:bg-[#eff2fb] rounded-2xl">
             Partners
             <span class="text-sm group-hover:rotate-180 transition-transform">
               <svg class="text-blue-gray h-4 w-4">
@@ -766,69 +536,47 @@
           </div>
 
           <!-- Partners dropdown -->
-          <div
-            class="menu w-full h-[calc(100vh-4rem)] overflow-y-scroll absolute bg-white top-[calc(100%+2px)] left-0 px-6 pt-6 pb-20 font-inter"
-          >
+          <div class="menu w-full h-[calc(100vh-4rem)] overflow-y-scroll absolute bg-white top-[calc(100%+2px)] left-0 px-6 pt-6 pb-20 font-inter">
             <div class="grid grid-cols-9 gap-14 bg-white">
               <!-- 1st Column DigitialOcean Partner Programs -->
               <div class="col-span-3 p-8 border-2 bg-light-blue rounded-3xl">
-                <p class="text-sm mb-3 pl-3 text-[#0a1632] font-semibold">
-                  DigitialOcean Partner Programs
-                </p>
+                <p class="text-sm mb-3 pl-3 text-[#0a1632] font-semibold">DigitialOcean Partner Programs</p>
                 <ul class="flex flex-col">
                   <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
-                    <a class="text-charcoal text-lg" href="#">
-                      Become a Partner
-                    </a>
+                    <a class="text-charcoal text-lg" href="#"> Become a Partner </a>
                   </li>
                   <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
-                    <a class="text-charcoal text-lg" href="#">
-                      Partner Services Program
-                    </a>
+                    <a class="text-charcoal text-lg" href="#"> Partner Services Program </a>
                   </li>
                   <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
-                    <a class="text-charcoal text-lg" href="#">
-                      ISV Partner Program
-                    </a>
+                    <a class="text-charcoal text-lg" href="#"> ISV Partner Program </a>
                   </li>
                   <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
                     <a class="text-charcoal text-lg" href="#"> Marketplace </a>
                   </li>
                   <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
-                    <a class="text-charcoal text-lg" href="#">
-                      Hatch Partner Program
-                    </a>
+                    <a class="text-charcoal text-lg" href="#"> Hatch Partner Program </a>
                   </li>
                   <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
-                    <a class="text-charcoal text-lg" href="#">
-                      Connect with a Parner
-                    </a>
+                    <a class="text-charcoal text-lg" href="#"> Connect with a Parner </a>
                   </li>
                 </ul>
               </div>
               <!-- 2nd Column DigitialOcean Partner Programs -->
               <div class="flex flex-col gap-4 col-span-2 py-10">
-                <p class="text-sm text-[#0a1632] font-semibold">
-                  Partner Programs Resources
-                </p>
+                <p class="text-sm text-[#0a1632] font-semibold">Partner Programs Resources</p>
                 <ul class="flex flex-col gap-2">
                   <li class="font-medium text-blue-gray hover:text-charcoal">
                     <a href="#">Customer Stories</a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
                     <a class="flex justify-between items-center" href="#"
-                      >DigitalOcean Onboarding Series
-                      <i
-                        class="fa-solid fa-arrow-right text-xs transform font-thin -rotate-45"
-                      ></i
+                      >DigitalOcean Onboarding Series <i class="fa-solid fa-arrow-right text-xs transform font-thin -rotate-45"></i
                     ></a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
                     <a class="flex justify-between items-center" href="#"
-                      >Training for Agencies and Freelancers
-                      <i
-                        class="fa-solid fa-arrow-right text-xs transform font-thin -rotate-45"
-                      ></i
+                      >Training for Agencies and Freelancers <i class="fa-solid fa-arrow-right text-xs transform font-thin -rotate-45"></i
                     ></a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
@@ -838,130 +586,79 @@
               </div>
               <!-- 3rd Column DigitialOcean Partner Programs -->
               <div class="flex flex-col gap-4 col-span-2 py-10">
-                <p class="text-sm text-[#0a1632] font-semibold">
-                  Featured Partner Articles
-                </p>
+                <p class="text-sm text-[#0a1632] font-semibold">Featured Partner Articles</p>
                 <ul class="flex flex-col gap-4">
-                  <li
-                    class="font-medium flex flex-col gap-2 bg-light-blue border-2 px-3 py-3 text-charcoal rounded-xl"
-                  >
+                  <li class="font-medium flex flex-col gap-2 bg-light-blue border-2 px-3 py-3 text-charcoal rounded-xl">
                     <p>Cloud cost optimization best practices</p>
-                    <a
-                      class="flex gap-3 items-center relative w-max after:bg-charcoal"
-                      href="#"
-                      >Read more <i class="fa-solid fa-arrow-right text-sm"></i
-                    ></a>
+                    <a class="flex gap-3 items-center relative w-max after:bg-charcoal" href="#">Read more <i class="fa-solid fa-arrow-right text-sm"></i></a>
                   </li>
-                  <li
-                    class="font-medium flex flex-col gap-2 bg-light-blue border-2 px-3 py-3 text-charcoal rounded-xl"
-                  >
+                  <li class="font-medium flex flex-col gap-2 bg-light-blue border-2 px-3 py-3 text-charcoal rounded-xl">
                     <p>How to choose a cloud provider</p>
-                    <a
-                      class="flex gap-3 items-center relative w-max after:bg-charcoal"
-                      href="#"
-                      >Read more <i class="fa-solid fa-arrow-right text-sm"></i
-                    ></a>
+                    <a class="flex gap-3 items-center relative w-max after:bg-charcoal" href="#">Read more <i class="fa-solid fa-arrow-right text-sm"></i></a>
                   </li>
-                  <li
-                    class="font-medium flex flex-col gap-2 bg-light-blue border-2 px-3 py-3 text-charcoal rounded-xl"
-                  >
-                    <p>
-                      DigitalOcean vs. AWS Lightsail: Which Cloud Platform is
-                      Right for You?
-                    </p>
-                    <a
-                      class="flex gap-3 items-center relative w-max after:bg-charcoal"
-                      href="#"
-                      >Read more <i class="fa-solid fa-arrow-right text-sm"></i
-                    ></a>
+                  <li class="font-medium flex flex-col gap-2 bg-light-blue border-2 px-3 py-3 text-charcoal rounded-xl">
+                    <p>DigitalOcean vs. AWS Lightsail: Which Cloud Platform is Right for You?</p>
+                    <a class="flex gap-3 items-center relative w-max after:bg-charcoal" href="#">Read more <i class="fa-solid fa-arrow-right text-sm"></i></a>
                   </li>
                 </ul>
               </div>
               <!-- 4th Column -->
               <ul class="flex flex-col gap-4 col-span-2 py-10">
                 <li class="flex flex-col gap-2">
-                  <p
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center"
-                  >
-                    Questions?
-                  </p>
-                  <span
-                    class="bg-[#b5f6ff] p-4 rounded-2xl border-2 border-[#a5e0ea]"
-                    ><a
-                      class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
-                      href="#"
-                      >Talk to an expert
-                      <i class="fa-solid fa-arrow-right text-sm"></i></a
+                  <p class="text-charcoal font-semibold text-sm flex gap-2 items-center">Questions?</p>
+                  <span class="bg-[#b5f6ff] p-4 rounded-2xl border-2 border-[#a5e0ea]"
+                    ><a class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal" href="#"
+                      >Talk to an expert <i class="fa-solid fa-arrow-right text-sm"></i></a
                   ></span>
                 </li>
 
                 <li class="flex flex-col gap-2">
-                  <p class="text-sm text-[#0a1632] font-semibold">
-                    New Partnerships
-                  </p>
-                  <span
-                    class="bg-amber-200 p-4 rounded-2xl border-2 border-amber-300"
-                    ><a
-                      class="text-charcoal font-semibold text-sm flex gap-2 items-center relative after:bg-charcoal"
-                      href="#"
-                      >1-Click Models powered by Hugging Face
-                      <i class="fa-solid fa-arrow-right text-sm"></i></a
+                  <p class="text-sm text-[#0a1632] font-semibold">New Partnerships</p>
+                  <span class="bg-amber-200 p-4 rounded-2xl border-2 border-amber-300"
+                    ><a class="text-charcoal font-semibold text-sm flex gap-2 items-center relative after:bg-charcoal" href="#"
+                      >1-Click Models powered by Hugging Face <i class="fa-solid fa-arrow-right text-sm"></i></a
                   ></span>
                 </li>
               </ul>
             </div>
           </div>
         </li>
-        <li
-          class="text-blue-gray font-inter px-4 py-2 hover:bg-[#eff2fb] rounded-2xl"
-        >
-          Pricing
-        </li>
+        <li class="text-blue-gray font-inter px-4 py-2 hover:bg-[#eff2fb] rounded-2xl">Pricing</li>
       </ul>
     </header>
     <section
       id="hero"
       class="bg-gradient-to-b from-[#1433d6] to-[#0069ff] bg-[center_top] bg-cover bg-no-repeat px-6 pt-20 -pb-10 mb-40 md:bg-[url('/public/hero_background.svg')]"
     >
-      <div
-        class="w-full mx-auto md:max-w-[54rem] flex flex-col items-center gap-2"
-      >
-        <h1
-          class="text-[28px] text-center font-epilogue font-bold pt-20 text-soft-white md:text-5xl md:max-w-[40rem]"
-        >
+      <div class="w-full mx-auto md:max-w-[54rem] flex flex-col items-center gap-2">
+        <h1 class="text-[28px] text-center font-epilogue font-bold pt-20 text-soft-white md:text-5xl md:max-w-[40rem]">
           The simplest cloud that scales with you.
         </h1>
-        <p
-          class="text-center text-soft-white mb-10 md:text-lg md:max-w-[40rem]"
-        >
-          Powerful and production-ready, our cloud platform has the solutions
-          that devs like you need to succeed—whether you're building
-          world-changing AI apps, running a side project, or building a
-          business.
+        <p class="text-center text-soft-white mb-10 md:text-lg md:max-w-[40rem]">
+          Powerful and production-ready, our cloud platform has the solutions that devs like you need to succeed—whether you're building world-changing AI apps,
+          running a side project, or building a business.
         </p>
-        <div
-          class="w-full mx-auto flex flex-col gap-4 md:flex-row md:justify-center"
-        >
-          <div
-            class="flex bg-white px-6 py-2 mg rounded-4xl justify-center text-charcoal font-semibold"
+        <div class="w-full mx-auto flex flex-col gap-4 md:flex-row md:justify-center">
+          <a
+            href="#"
+            class="flex bg-white px-6 py-2 rounded-4xl justify-center text-charcoal font-semibold hover:bg-gray-100 focus:outline-none focus:ring focus:ring-blue-300"
           >
             Sign up with email
-          </div>
-          <div
-            class="flex gap-3 px-6 py-2 bg-white rounded-4xl justify-center text-charcoal font-semibold"
+          </a>
+          <a
+            href="#"
+            class="flex gap-3 px-6 py-2 bg-white rounded-4xl justify-center text-charcoal font-semibold hover:bg-gray-100 focus:outline-none focus:ring focus:ring-blue-300"
           >
-            <img class="w-6 h-6" src="./public/google.svg" alt="Google icon" />
+            <img class="w-6 h-6" src="./public/google.svg" alt="Google" loading="lazy" aria-hidden="true" />
             Sign up with Google
-          </div>
-          <div
-            class="flex gap-3 px-6 py-2 bg-white rounded-4xl justify-center text-charcoal font-semibold"
+          </a>
+          <a
+            href="#"
+            class="flex gap-3 px-6 py-2 bg-white rounded-4xl justify-center text-charcoal font-semibold hover:bg-gray-100 focus:outline-none focus:ring focus:ring-blue-300"
           >
-            <img
-              class="w-6 h-6"
-              src="./public/github.svg"
-              alt="Github Icon"
-            />Sign up with Github
-          </div>
+            <img class="w-6 h-6" src="./public/github.svg" alt="GitHub" aria-hidden="true" loading="lazy" />
+            Sign up with GitHub
+          </a>
         </div>
       </div>
       <img
@@ -969,56 +666,24 @@
         src="./public/dashboard.svg"
         alt="Dashboard"
         id="dashboard-photo"
+        loading="lazy"
       />
     </section>
 
     <section class="py-20 px-6 overflow-hidden">
-      <div
-        class="bg-blue-600 rounded-xl flex flex-col lg:flex-row max-w-[68rem] mx-auto"
-      >
+      <div class="bg-blue-600 rounded-xl flex flex-col lg:flex-row max-w-[68rem] mx-auto">
         <div class="p-6">
-          <h2 class="font-bold text-white text-xl">
-            Now Available: GPU Droplets
-          </h2>
+          <h2 class="font-bold text-white text-xl">Now Available: GPU Droplets</h2>
           <p class="text-white mb-2">
-            Access greater computing power with DigitalOcean's GPU Droplets, now
-            available on-demand starting at $2.99/GPU/hour. Experience
-            affordable, high-performance AI infrastructure designed for
-            developers and startups.
+            Access greater computing power with DigitalOcean's GPU Droplets, now available on-demand starting at $2.99/GPU/hour. Experience affordable,
+            high-performance AI infrastructure designed for developers and startups.
           </p>
-          <a
-            href="#"
-            class="relative flex w-max items-center gap-3 text-white after:bg-white"
-          >
+          <a href="#" class="relative flex w-max items-center gap-3 text-white after:bg-white">
             Learn more
-            <svg
-              viewBox="0 0 18 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-4 h-4"
-            >
-              <path
-                d="M12.6033 1.27344L16.6033 5.77344L12.6033 10.2734"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M1.60327 5.77344H16.6033"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
+            <i class="fa-solid fa-arrow-right text-sm"></i>
           </a>
         </div>
-        <img
-          class="object-contain w-full"
-          src="./public/fish_photo.svg"
-          alt="Picuture of Fishes"
-        />
+        <img class="object-contain w-full aspect-[68/27]" src="./public/fish_photo.svg" alt="Picuture of Fishes" loading="lazy" />
       </div>
     </section>
     <div class="bg-soft-white">
@@ -1026,15 +691,13 @@
         <div class="flex flex-col gap-2 col-span-6 md:col-span-3 lg:col-span-2">
           <h3 class="text-[28px] font-bold">#1</h3>
           <p class="text-blue-gray">
-            In IaaS usability, VPS for SMBs, & SMB Hosting
-            <a class="underline text-blue-500">on G2</a>
+            In laaS usability, VPS for SMBs, & SMB Hosting
+            <a href="#" class="underline text-blue-500">on G2</a>
           </p>
         </div>
         <div class="flex flex-col gap-2 col-span-6 md:col-span-3 lg:col-span-2">
           <h3 class="text-[28px] font-bold">99.99%</h3>
-          <p class="text-blue-gray">
-            Uptime SLA for Droplets and Volumes block storage
-          </p>
+          <p class="text-blue-gray">Uptime SLA for Droplets and Volumes block storage</p>
         </div>
         <div class="flex flex-col gap-2 col-span-6 md:col-span-3 lg:col-span-2">
           <h3 class="text-[28px] font-bold">>600k</h3>
@@ -1043,24 +706,14 @@
       </div>
     </div>
     <section class="py-20 px-6 max-w-[71rem] mx-auto">
-      <h2 class="font-bold text-[28px] text-center">
-        A cloud for your entire journey
-      </h2>
+      <h2 class="font-bold text-[28px] text-center">A cloud for your entire journey</h2>
       <p class="text-center text-blue-gray mb-6 max-w-[40rem] mx-auto">
-        DigitalOcean's suite of products is designed to be with you on every
-        step of your journey, whether you want to do it yourself or get help
-        from the experts.
+        DigitalOcean's suite of products is designed to be with you on every step of your journey, whether you want to do it yourself or get help from the
+        experts.
       </p>
-      <a
-        href="#"
-        class="relative flex w-max items-center gap-3 m-auto mb-16 font-semibold after:bg-charcoal"
+      <a href="#" class="relative flex w-max items-center gap-3 m-auto mb-16 font-semibold after:bg-charcoal"
         >See all products
-        <svg
-          viewBox="0 0 18 12"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="w-4 h-4"
-        >
+        <svg viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4">
           <path
             d="M12.6033 1.27344L16.6033 5.77344L12.6033 10.2734"
             stroke="currentColor"
@@ -1068,20 +721,12 @@
             stroke-linecap="round"
             stroke-linejoin="round"
           ></path>
-          <path
-            d="M1.60327 5.77344H16.6033"
-            stroke="currentColor"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          ></path>
+          <path d="M1.60327 5.77344H16.6033" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
         </svg>
       </a>
 
       <div class="grid grid-cols-6 gap-6">
-        <div
-          class="flex flex-col gap-6 ring-2 ring-blue-200 bg-light-blue p-8 pb-10 rounded-2xl col-span-6 md:col-span-3 lg:col-span-2"
-        >
+        <div class="flex flex-col gap-6 ring-2 ring-blue-200 bg-light-blue p-8 pb-10 rounded-2xl col-span-6 md:col-span-3 lg:col-span-2">
           <div class="flex gap-4 items-center">
             <svg class="text-blue-600 w-12 h-12">
               <use href="./public/spritesheet.svg#icon--virtual-machine"></use>
@@ -1090,65 +735,24 @@
           </div>
 
           <svg viewBox="0 0 1 0.002" preserveAspectRatio="none">
-            <path
-              d="M0 0 l12 0"
-              stroke="#A9B3CA"
-              stroke-width="1"
-              stroke-dasharray="4 8"
-              vector-effect="non-scaling-stroke"
-              stroke-linecap="round"
-            ></path>
+            <path d="M0 0 l12 0" stroke="#A9B3CA" stroke-width="1" stroke-dasharray="4 8" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
           </svg>
 
           <p class="text-blue-gray">
-            DigitalOcean Droplets are simple, scalable virtual machines for all
-            your
-            <a
-              class="underline text-blue-700"
-              href="https://www.digitalocean.com/products/block-storage"
-              >web hosting</a
-            >
+            DigitalOcean Droplets are simple, scalable virtual machines for all your
+            <a class="underline text-blue-700" href="https://www.digitalocean.com/products/block-storage">web hosting</a>
             and
-            <a
-              class="underline text-blue-700"
-              href="https://www.digitalocean.com/solutions/vps-hosting"
-              >VPS hosting</a
-            >
+            <a class="underline text-blue-700" href="https://www.digitalocean.com/solutions/vps-hosting">VPS hosting</a>
             needs.
           </p>
 
-          <a
-            href="https://www.digitalocean.com/products/droplets"
-            class="relative flex w-max items-center gap-3 font-semibold after:bg-charcoal"
-          >
+          <a href="https://www.digitalocean.com/products/droplets" class="relative flex w-max items-center gap-3 font-semibold after:bg-charcoal">
             Learn more
-            <svg
-              viewBox="0 0 18 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-4 h-4"
-            >
-              <path
-                d="M12.6033 1.27344L16.6033 5.77344L12.6033 10.2734"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M1.60327 5.77344H16.6033"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
+            <i class="fa-solid fa-arrow-right text-sm"></i>
           </a>
         </div>
         <!--  -->
-        <div
-          class="flex flex-col gap-6 ring-2 ring-blue-200 bg-light-blue p-8 pb-10 rounded-2xl col-span-6 md:col-span-3 lg:col-span-2"
-        >
+        <div class="flex flex-col gap-6 ring-2 ring-blue-200 bg-light-blue p-8 pb-10 rounded-2xl col-span-6 md:col-span-3 lg:col-span-2">
           <div class="flex gap-4 items-center">
             <svg class="text-blue-600 w-12 h-12">
               <use href="./public/spritesheet.svg#icon--kubernetes"></use>
@@ -1157,53 +761,18 @@
           </div>
 
           <svg viewBox="0 0 1 0.002" preserveAspectRatio="none">
-            <path
-              d="M0 0 l12 0"
-              stroke="#A9B3CA"
-              stroke-width="1"
-              stroke-dasharray="4 8"
-              vector-effect="non-scaling-stroke"
-              stroke-linecap="round"
-            ></path>
+            <path d="M0 0 l12 0" stroke="#A9B3CA" stroke-width="1" stroke-dasharray="4 8" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
           </svg>
 
-          <p class="text-blue-gray">
-            DigitalOcean Kubernetes is a managed solution that is easy to scale
-            and includes a 99.95% SLA and free control plane.
-          </p>
+          <p class="text-blue-gray">DigitalOcean Kubernetes is a managed solution that is easy to scale and includes a 99.95% SLA and free control plane.</p>
 
-          <a
-            href="https://www.digitalocean.com/products/kubernetes"
-            class="relative flex w-max items-center gap-3 font-semibold after:bg-charcoal"
-          >
+          <a href="https://www.digitalocean.com/products/kubernetes" class="relative flex w-max items-center gap-3 font-semibold after:bg-charcoal">
             Learn more
-            <svg
-              viewBox="0 0 18 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-4 h-4"
-            >
-              <path
-                d="M12.6033 1.27344L16.6033 5.77344L12.6033 10.2734"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M1.60327 5.77344H16.6033"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
+            <i class="fa-solid fa-arrow-right text-sm"></i>
           </a>
         </div>
         <!--  -->
-        <div
-          class="flex flex-col gap-6 ring-2 ring-blue-200 bg-light-blue p-8 pb-10 rounded-2xl col-span-6 md:col-span-3 lg:col-span-2"
-        >
+        <div class="flex flex-col gap-6 ring-2 ring-blue-200 bg-light-blue p-8 pb-10 rounded-2xl col-span-6 md:col-span-3 lg:col-span-2">
           <div class="flex gap-4 items-center">
             <svg class="text-blue-700 w-12 h-12">
               <use href="public/spritesheet.svg#icon--AI-ML"></use>
@@ -1212,53 +781,18 @@
           </div>
 
           <svg viewBox="0 0 1 0.002" preserveAspectRatio="none">
-            <path
-              d="M0 0 l12 0"
-              stroke="#A9B3CA"
-              stroke-width="1"
-              stroke-dasharray="4 8"
-              vector-effect="non-scaling-stroke"
-              stroke-linecap="round"
-            ></path>
+            <path d="M0 0 l12 0" stroke="#A9B3CA" stroke-width="1" stroke-dasharray="4 8" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
           </svg>
 
-          <p class="text-blue-gray">
-            Build, train, and deploy AI apps, and create AI agents with a suite
-            of simple-to-use tools and GPU compute.
-          </p>
+          <p class="text-blue-gray">Build, train, and deploy AI apps, and create AI agents with a suite of simple-to-use tools and GPU compute.</p>
 
-          <a
-            href="https://www.digitalocean.com/products/ai-ml"
-            class="relative flex w-max items-center gap-3 font-semibold after:bg-charcoal"
-          >
+          <a href="https://www.digitalocean.com/products/ai-ml" class="relative flex w-max items-center gap-3 font-semibold after:bg-charcoal">
             Learn more
-            <svg
-              viewBox="0 0 18 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-4 h-4"
-            >
-              <path
-                d="M12.6033 1.27344L16.6033 5.77344L12.6033 10.2734"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M1.60327 5.77344H16.6033"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
+            <i class="fa-solid fa-arrow-right text-sm"></i>
           </a>
         </div>
         <!--  -->
-        <div
-          class="flex flex-col gap-6 ring-2 ring-blue-200 bg-light-blue p-8 pb-10 rounded-2xl col-span-6 md:col-span-3 lg:col-span-2"
-        >
+        <div class="flex flex-col gap-6 ring-2 ring-blue-200 bg-light-blue p-8 pb-10 rounded-2xl col-span-6 md:col-span-3 lg:col-span-2">
           <div class="flex gap-4 items-center">
             <svg class="text-blue-700 w-12 h-12">
               <use href="public/spritesheet.svg#icon--app-platform"></use>
@@ -1267,53 +801,20 @@
           </div>
 
           <svg viewBox="0 0 1 0.002" preserveAspectRatio="none">
-            <path
-              d="M0 0 l12 0"
-              stroke="#A9B3CA"
-              stroke-width="1"
-              stroke-dasharray="4 8"
-              vector-effect="non-scaling-stroke"
-              stroke-linecap="round"
-            ></path>
+            <path d="M0 0 l12 0" stroke="#A9B3CA" stroke-width="1" stroke-dasharray="4 8" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
           </svg>
 
           <p class="text-blue-gray">
-            App Platform is our fully-managed PaaS solution to get your app to
-            market fast that's super simple to set up and cost-effective.
+            App Platform is our fully-managed PaaS solution to get your app to market fast that's super simple to set up and cost-effective.
           </p>
 
-          <a
-            href="https://www.digitalocean.com/products/app-platform"
-            class="relative flex w-max items-center gap-3 font-semibold after:bg-charcoal"
-          >
+          <a href="https://www.digitalocean.com/products/app-platform" class="relative flex w-max items-center gap-3 font-semibold after:bg-charcoal">
             Learn more
-            <svg
-              viewBox="0 0 18 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-4 h-4"
-            >
-              <path
-                d="M12.6033 1.27344L16.6033 5.77344L12.6033 10.2734"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M1.60327 5.77344H16.6033"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
+            <i class="fa-solid fa-arrow-right text-sm"></i>
           </a>
         </div>
         <!--  -->
-        <div
-          class="flex flex-col gap-6 ring-2 ring-blue-200 bg-light-blue p-8 pb-10 rounded-2xl col-span-6 md:col-span-3 lg:col-span-2"
-        >
+        <div class="flex flex-col gap-6 ring-2 ring-blue-200 bg-light-blue p-8 pb-10 rounded-2xl col-span-6 md:col-span-3 lg:col-span-2">
           <div class="flex gap-4 items-center">
             <svg class="text-blue-700 w-12 h-12">
               <use href="public/spritesheet.svg#icon--managed-database"></use>
@@ -1322,53 +823,20 @@
           </div>
 
           <svg viewBox="0 0 1 0.002" preserveAspectRatio="none">
-            <path
-              d="M0 0 l12 0"
-              stroke="#A9B3CA"
-              stroke-width="1"
-              stroke-dasharray="4 8"
-              vector-effect="non-scaling-stroke"
-              stroke-linecap="round"
-            ></path>
+            <path d="M0 0 l12 0" stroke="#A9B3CA" stroke-width="1" stroke-dasharray="4 8" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
           </svg>
 
           <p class="text-blue-gray">
-            Managed MongoDB, Kafka, MySQL, PostgreSQL, and Caching let you focus
-            on your apps while we update and scale your databases.
+            Managed MongoDB, Kafka, MySQL, PostgreSQL, and Caching let you focus on your apps while we update and scale your databases.
           </p>
 
-          <a
-            href="https://www.digitalocean.com/products/managed-databases"
-            class="relative flex w-max items-center gap-3 font-semibold after:bg-charcoal"
-          >
+          <a href="https://www.digitalocean.com/products/managed-databases" class="relative flex w-max items-center gap-3 font-semibold after:bg-charcoal">
             Learn more
-            <svg
-              viewBox="0 0 18 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-4 h-4"
-            >
-              <path
-                d="M12.6033 1.27344L16.6033 5.77344L12.6033 10.2734"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M1.60327 5.77344H16.6033"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
+            <i class="fa-solid fa-arrow-right text-sm"></i>
           </a>
         </div>
         <!--  -->
-        <div
-          class="flex flex-col gap-6 ring-2 ring-blue-200 bg-light-blue p-8 pb-10 rounded-2xl col-span-6 md:col-span-3 lg:col-span-2"
-        >
+        <div class="flex flex-col gap-6 ring-2 ring-blue-200 bg-light-blue p-8 pb-10 rounded-2xl col-span-6 md:col-span-3 lg:col-span-2">
           <div class="flex gap-4 items-center">
             <svg class="text-blue-700 w-12 h-12">
               <use href="public/spritesheet.svg#icon--storage"></use>
@@ -1376,170 +844,74 @@
             <h3 class="font-bold text-xl">Storage</h3>
           </div>
           <svg viewBox="0 0 1 0.002" preserveAspectRatio="none">
-            <path
-              d="M0 0 l12 0"
-              stroke="#A9B3CA"
-              stroke-width="1"
-              stroke-dasharray="4 8"
-              vector-effect="non-scaling-stroke"
-              stroke-linecap="round"
-            ></path>
+            <path d="M0 0 l12 0" stroke="#A9B3CA" stroke-width="1" stroke-dasharray="4 8" vector-effect="non-scaling-stroke" stroke-linecap="round"></path>
           </svg>
 
           <p class="text-blue-gray">
             DigitalOcean
-            <a
-              class="underline text-blue-700"
-              href="https://www.digitalocean.com/products/spaces"
-              >Spaces object storage</a
-            >
+            <a class="underline text-blue-700" href="https://www.digitalocean.com/products/spaces">Spaces object storage</a>
             and
-            <a
-              class="underline text-blue-700"
-              href="https://www.digitalocean.com/products/block-storage"
-              >Volumes block storage</a
-            >
+            <a class="underline text-blue-700" href="https://www.digitalocean.com/products/block-storage">Volumes block storage</a>
             are business-ready storage solutions.
           </p>
 
-          <a
-            href="#"
-            class="relative flex w-max items-center gap-3 font-semibold after:bg-charcoal"
-          >
+          <a href="#" class="relative flex w-max items-center gap-3 font-semibold after:bg-charcoal">
             Learn more
-            <svg
-              viewBox="0 0 18 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-4 h-4"
-            >
-              <path
-                d="M12.6033 1.27344L16.6033 5.77344L12.6033 10.2734"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M1.60327 5.77344H16.6033"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
+            <i class="fa-solid fa-arrow-right text-sm"></i>
           </a>
         </div>
       </div>
     </section>
 
     <section class="bg-[#caecff] py-20 px-6">
-      <h2 class="text-[28px] text-center font-bold">
-        Benefits to activate the builder in you
-      </h2>
+      <h2 class="text-[28px] text-center font-bold">Benefits to activate the builder in you</h2>
       <p class="text-blue-gray text-center mb-16 max-w-[40rem] mx-auto">
-        From simple tools and predictable pricing to support designed for
-        growing businesses, DigitalOcean's cloud is built to serve the unique
-        needs of startups and SMBs.
+        From simple tools and predictable pricing to support designed for growing businesses, DigitalOcean's cloud is built to serve the unique needs of
+        startups and SMBs.
       </p>
 
       <!--  -->
 
       <div class="grid grid-cols-4 gap-6 max-w-[68rem] mx-auto">
-        <div
-          class="p-8 pb-10 bg-soft-white flex flex-col gap-2 rounded-2xl col-span-4 md:col-span-2"
-        >
-          <img
-            class="h-20 w-20 mb-2"
-            src="./public/boat.svg"
-            alt="Photo of a Boat"
-          />
-          <h3 class="font-bold text-2xl">
-            Build and ship faster using simple tools
-          </h3>
+        <div class="p-8 pb-10 bg-soft-white flex flex-col gap-2 rounded-2xl col-span-4 md:col-span-2">
+          <img class="h-20 w-20 mb-2" src="./public/boat.svg" alt="Photo of a Boat" loading="lazy" />
+          <h3 class="font-bold text-2xl">Build and ship faster using simple tools</h3>
           <p class="text-blue-gray">
-            All of our products are built with simplicity at their core, so you
-            can spend your time focusing on building apps, not infrastructure.
+            All of our products are built with simplicity at their core, so you can spend your time focusing on building apps, not infrastructure.
           </p>
         </div>
 
-        <div
-          class="p-8 pb-10 bg-soft-white flex flex-col gap-2 rounded-2xl col-span-4 md:col-span-2"
-        >
-          <img
-            class="h-20 w-20 mb-2"
-            src="./public/growth.svg"
-            alt="Photo of an Icon which represents Growth"
-          />
-          <h3 class="font-bold text-2xl">
-            Grow profitably with predictable cloud costs
-          </h3>
+        <div class="p-8 pb-10 bg-soft-white flex flex-col gap-2 rounded-2xl col-span-4 md:col-span-2">
+          <img class="h-20 w-20 mb-2" src="./public/growth.svg" alt="Photo of an Icon which represents Growth" loading="lazy" />
+          <h3 class="font-bold text-2xl">Grow profitably with predictable cloud costs</h3>
           <p class="text-blue-gray">
-            Our predictable pricing and leading price-to-performance ratio
-            contribute to an ROI of 186%,
-            <a
-              href="https://www.digitalocean.com/reports/forrester-total-economic-impact-study"
-              >according to a Forrester study.</a
-            >
+            Our predictable pricing and leading price-to-performance ratio contribute to an ROI of 186%,
+            <a href="https://www.digitalocean.com/reports/forrester-total-economic-impact-study">according to a Forrester study.</a>
           </p>
         </div>
 
-        <div
-          class="p-8 pb-10 bg-soft-white flex flex-col gap-2 rounded-2xl col-span-4 md:col-span-2"
-        >
-          <img
-            class="h-20 w-20 mb-2"
-            src="./public/support.svg"
-            alt="Icon representing customer support"
-          />
-          <h3 class="font-bold text-2xl">
-            Reduce your roadblocks with dedicated support
-          </h3>
-          <p class="text-blue-gray">
-            Get free, personalized support or upgrade to paid plans to receive
-            dedicated help and faster response times.
-          </p>
+        <div class="p-8 pb-10 bg-soft-white flex flex-col gap-2 rounded-2xl col-span-4 md:col-span-2">
+          <img class="h-20 w-20 mb-2" src="./public/support.svg" alt="Icon representing customer support" loading="lazy" />
+          <h3 class="font-bold text-2xl">Reduce your roadblocks with dedicated support</h3>
+          <p class="text-blue-gray">Get free, personalized support or upgrade to paid plans to receive dedicated help and faster response times.</p>
         </div>
 
-        <div
-          class="p-8 pb-10 bg-soft-white flex flex-col gap-2 rounded-2xl col-span-4 md:col-span-2"
-        >
-          <img
-            class="h-20 w-20 mb-2"
-            src="./public/customer-experience.svg"
-            alt="An Icon representing customer-experience"
-          />
-          <h3 class="font-bold text-2xl">
-            Improve customer experience by building on a reliable platform
-          </h3>
-          <p class="text-blue-gray">
-            Deliver superior customer experience with our globally distributed
-            platform, minimal downtime, and intuitive products.
-          </p>
+        <div class="p-8 pb-10 bg-soft-white flex flex-col gap-2 rounded-2xl col-span-4 md:col-span-2">
+          <img class="h-20 w-20 mb-2" src="./public/customer-experience.svg" alt="An Icon representing customer-experience" loading="lazy" />
+          <h3 class="font-bold text-2xl">Improve customer experience by building on a reliable platform</h3>
+          <p class="text-blue-gray">Deliver superior customer experience with our globally distributed platform, minimal downtime, and intuitive products.</p>
         </div>
       </div>
     </section>
     <div class="w-full px-6 py-20 bg-soft-white">
-      <div
-        class="p-8 md:p-12 md:pt-10 pb-10 rounded-lg shadow-custom max-w-[54rem] mx-auto"
-      >
-        <div
-          class="flex flex-col md:flex-row gap-6 md:gap-12 items-center md:items-start"
-        >
-          <img
-            src="./public/idc_logo.svg"
-            class="w-[115px] md:w-[188px] aspect-auto"
-            alt="IDC logo"
-          />
+      <div class="p-8 md:p-12 md:pt-10 pb-10 rounded-lg shadow-custom max-w-[54rem] mx-auto">
+        <div class="flex flex-col md:flex-row gap-6 md:gap-12 items-center md:items-start">
+          <img src="./public/idc_logo.svg" class="w-[115px] aspect-[1/2] md:w-[188px]" alt="IDC logo" loading="lazy" />
           <div class="flex flex-col gap-8">
             <q class="font-inter font-bold text-lg">
-              DigitalOcean's blend of intentional simplicity, affordability and
-              flexibility in its cloud services makes it an appealing option for
-              individual developers, high growth startups, and more generally
-              ISVs and SMEs (small and medium enterprises) seeking a robust
-              platform alternative from the hyperscalers. It's a business ready
-              cloud - making it easy for growing companies to attain momentum
-              and scale sustainably.
+              DigitalOcean's blend of intentional simplicity, affordability and flexibility in its cloud services makes it an appealing option for individual
+              developers, high growth startups, and more generally ISVs and SMEs (small and medium enterprises) seeking a robust platform alternative from the
+              hyperscalers. It's a business ready cloud - making it easy for growing companies to attain momentum and scale sustainably.
             </q>
 
             <figure class="flex flex-col gap-4 md:flex-row">
@@ -1547,12 +919,11 @@
                 class="w-12 aspect-square rounded-full"
                 src="./public/dave_mc.png"
                 alt="Picture of Dave McCarthy, Research Vice President at IDC"
+                loading="lazy"
               />
               <figcaption class="font-inter font-bold flex flex-col">
                 Dave McCarthy
-                <span class="font-inter font-normal"
-                  >Research Vice President, IDC</span
-                >
+                <span class="font-inter font-normal">Research Vice President, IDC</span>
               </figcaption>
             </figure>
           </div>
@@ -1561,50 +932,18 @@
     </div>
 
     <div class="py-20 px-6 overflow-hidden">
-      <div
-        class="bg-blue-600 rounded-xl flex flex-col lg:flex-row max-w-[68rem] mx-auto"
-      >
+      <div class="bg-blue-600 rounded-xl flex flex-col lg:flex-row max-w-[68rem] mx-auto">
         <div class="p-6">
-          <h2 class="font-bold text-white text-xl">
-            See our products in action
-          </h2>
+          <h2 class="font-bold text-white text-xl">See our products in action</h2>
           <p class="text-white mb-2">
-            heck out our brief product tours to see how simple, easy, and
-            pleasant it is to use DigitalOcean's cloud hosting products.
+            heck out our brief product tours to see how simple, easy, and pleasant it is to use DigitalOcean's cloud hosting products.
           </p>
-          <a
-            href="https://www.digitalocean.com/product-tours"
-            class="relative flex w-max items-center gap-3 text-white after:bg-white"
-          >
+          <a href="https://www.digitalocean.com/product-tours" class="relative flex w-max items-center gap-3 text-white after:bg-white">
             Take a tour
-            <svg
-              viewBox="0 0 18 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-4 h-4"
-            >
-              <path
-                d="M12.6033 1.27344L16.6033 5.77344L12.6033 10.2734"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M1.60327 5.77344H16.6033"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
+            <i class="fa-solid fa-arrow-right text-sm"></i>
           </a>
         </div>
-        <img
-          class="object-contain w-full"
-          src="./public/submarine.svg"
-          alt="Picture of a submarine"
-        />
+        <img class="object-contain w-full aspect-[68/27]" src="./public/submarine.svg" alt="Picture of a submarine" loading="lazy" />
       </div>
     </div>
     <div class="px-6">
@@ -1612,209 +951,114 @@
         class="flex flex-col bg-[#b5f6ff] md:bg-[url('/public/wave.svg')] md:p-[4rem_1.5rem_5rem] bg-no-repeat bg-bottom max-w-[68rem] mx-auto overflow-hidden rounded-lg"
       >
         <div class="p-[1.5rem_1rem_0] md:p-0">
-          <h2 class="text-4xl font-bold text-center mb-4">
-            Get started for Free
-          </h2>
-          <p class="text-blue-gray mx-auto text-center max-w-[26rem] mb-10">
-            Sign up and get $200 in credit for your first 60 days with
-            DigitalOcean.*
-          </p>
-          <a
-            class="bg-blue-700 text-white font-bold after:bg-white py-2 px-6 block w-max mx-auto rounded-3xl"
-            href="#"
-            >Get started</a
-          >
+          <h2 class="text-4xl font-bold text-center mb-4">Get started for Free</h2>
+          <p class="text-blue-gray mx-auto text-center max-w-[26rem] mb-10">Sign up and get $200 in credit for your first 60 days with DigitalOcean.*</p>
+          <a class="bg-blue-700 text-white font-bold after:bg-white py-2 px-6 block w-max mx-auto rounded-3xl" href="#">Get started</a>
         </div>
-        <img
-          class="w-full aspect-[1088/328] md:hidden"
-          src="./public/wave.svg"
-          alt="Picture of a wave"
-        />
+        <img class="w-full aspect-[1088/328] md:hidden" src="./public/wave.svg" alt="Picture of a wave" loading="lazy" />
       </div>
-      <p class="text-xs text-center text-blue-gray mt-10">
-        *This promotional offer applies to new accounts only.
-      </p>
+      <p class="text-xs text-center text-blue-gray mt-10">*This promotional offer applies to new accounts only.</p>
     </div>
 
     <footer class="py-32 px-6 bg-soft-white">
       <!-- footer items after 768px screen width -->
-      <div
-        class="hidden md:grid md:grid-cols-[repeat(auto-fill,_minmax(12rem,_1fr))] gap-8 max-w-[68rem] mx-auto"
-      >
+      <div class="hidden md:grid md:grid-cols-[repeat(auto-fill,_minmax(12rem,_1fr))] gap-8 max-w-[68rem] mx-auto">
         <!-- Company Section -->
-        <div>
-          <h2 class="font-bold font-inter">Company</h2>
+        <div aria-labelledby="company-heading">
+          <h2 id="company-heading" class="font-bold font-inter text-charcoal">Company</h2>
           <ul class="mt-2 space-y-1 font-inter">
-            <li><a href="#" class="text-blue-gray text-sm">About</a></li>
-            <li><a href="#" class="text-blue-gray text-sm">Leadership</a></li>
-            <li><a href="#" class="text-blue-gray text-sm">Blog</a></li>
-            <li><a href="#" class="text-blue-gray text-sm">Careers</a></li>
-            <li><a href="#" class="text-blue-gray text-sm">Customers</a></li>
-            <li><a href="#" class="text-blue-gray text-sm">Partners</a></li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Referral Program</a>
-            </li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Affiliate Program</a>
-            </li>
-            <li><a href="#" class="text-blue-gray text-sm">Press</a></li>
-            <li><a href="#" class="text-blue-gray text-sm">Legal</a></li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Privacy Policy</a>
-            </li>
-            <li><a href="#" class="text-blue-gray text-sm">Security</a></li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Investor Relations</a>
-            </li>
-            <li><a href="#" class="text-blue-gray text-sm">DO Impact</a></li>
-            <li><a href="#" class="text-blue-gray text-sm">Nonprofits</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Learn more about the company">About</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Meet the leadership team">Leadership</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Read our blog">Blog</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Explore career opportunities">Careers</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="See our customers">Customers</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Our partners">Partners</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Join our referral program">Referral Program</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Join our affiliate program">Affiliate Program</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="View press materials">Press</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="View legal information">Legal</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Read our privacy policy">Privacy Policy</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Learn about our security measures">Security</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Investor relations details">Investor Relations</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Discover our impact">DO Impact</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Support for nonprofits">Nonprofits</a></li>
           </ul>
         </div>
 
         <!-- Products Section -->
-        <div>
-          <h2 class="font-bold">Products</h2>
+        <div aria-labelledby="products-heading">
+          <h2 id="products-heading" class="font-bold font-inter text-charcoal">Products</h2>
           <ul class="mt-2 space-y-1 font-inter">
-            <li><a href="#" class="text-blue-gray text-sm">Overview</a></li>
-            <li><a href="#" class="text-blue-gray text-sm">Droplets</a></li>
-            <li><a href="#" class="text-blue-gray text-sm">Kubernetes</a></li>
-            <li><a href="#" class="text-blue-gray text-sm">Functions</a></li>
-            <li><a href="#" class="text-blue-gray text-sm">App Platform</a></li>
-            <li><a href="#" class="text-blue-gray text-sm">GPU Droplets</a></li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">1-Click Models</a>
-            </li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">GenAI Platform</a>
-            </li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Bare Metal GPUs</a>
-            </li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Load Balancers</a>
-            </li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Managed Databases</a>
-            </li>
-            <li><a href="#" class="text-blue-gray text-sm">Spaces</a></li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Block Storage</a>
-            </li>
-            <li><a href="#" class="text-blue-gray text-sm">API</a></li>
-            <li><a href="#" class="text-blue-gray text-sm">Uptime</a></li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm"
-                >Identity Access Management</a
-              >
-            </li>
-            <li><a href="#" class="text-blue-gray text-sm">Cloudways</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Product overview">Overview</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Learn about Droplets">Droplets</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Kubernetes products">Kubernetes</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Explore serverless functions">Functions</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Learn about App Platform">App Platform</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Discover GPU Droplets">GPU Droplets</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Learn about 1-Click Models">1-Click Models</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="GenAI platform details">GenAI Platform</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Bare Metal GPUs">Bare Metal GPUs</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Load Balancer solutions">Load Balancers</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Managed Databases overview">Managed Databases</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Learn about Spaces">Spaces</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Block Storage options">Block Storage</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Access the API documentation">API</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Uptime service status">Uptime</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Identity Access Management overview">Identity Access Management</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Cloudways product details">Cloudways</a></li>
           </ul>
         </div>
 
         <!-- Resources Section -->
-        <div>
-          <h2 class="font-bold">Resources</h2>
+        <div aria-labelledby="resources-heading">
+          <h2 id="resources-heading" class="font-bold font-inter text-charcoal">Resources</h2>
           <ul class="mt-2 space-y-1 font-inter">
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Community Tutorials</a>
-            </li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Community Q&A</a>
-            </li>
-            <li><a href="#" class="text-blue-gray text-sm">CSS-Tricks</a></li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Write for DOnations</a>
-            </li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Currents Research</a>
-            </li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm"
-                >Hatch Startup Program</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Wavemakers Program</a>
-            </li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Compass Council</a>
-            </li>
-            <li><a href="#" class="text-blue-gray text-sm">Open Source</a></li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Newsletter Signup</a>
-            </li>
-            <li><a href="#" class="text-blue-gray text-sm">Marketplace</a></li>
-            <li><a href="#" class="text-blue-gray text-sm">Pricing</a></li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Pricing Calculator</a>
-            </li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Documentation</a>
-            </li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Release Notes</a>
-            </li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Code of Conduct</a>
-            </li>
-            <li><a href="#" class="text-blue-gray text-sm">Shop Swag</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="Community Tutorials page">Community Tutorials</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="Community Q&A page">Community Q&A</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="CSS-Tricks website">CSS-Tricks</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="Write for DOnations page">Write for DOnations</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="Currents Research page">Currents Research</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="Hatch Startup Program page">Hatch Startup Program</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="Wavemakers Program page">Wavemakers Program</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="Compass Council page">Compass Council</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="Open Source page">Open Source</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="Newsletter Signup page">Newsletter Signup</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="Marketplace page">Marketplace</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="Pricing page">Pricing</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="Pricing Calculator page">Pricing Calculator</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="Documentation page">Documentation</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="Release Notes page">Release Notes</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="Code of Conduct page">Code of Conduct</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="Shop Swag page">Shop Swag</a></li>
           </ul>
         </div>
 
         <!-- Solutions Section -->
-        <div>
-          <h2 class="font-bold">Resources</h2>
+        <div aria-labelledby="solutions-heading">
+          <h2 id="solutions-heading" class="font-bold font-inter text-charcoal">Solutions</h2>
           <ul class="mt-2 space-y-1 font-inter">
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Website Hosting</a>
-            </li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">VPS Hosting</a>
-            </li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Web & Mobile Apps</a>
-            </li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Game Development</a>
-            </li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Streaming</a>
-            </li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">VPN</a>
-            </li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">SaaS Platforms</a>
-            </li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm"
-                >Cloud Hosting for Blockchain</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Startup Resources</a>
-            </li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="Website Hosting page">Website Hosting</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="VPS Hosting page">VPS Hosting</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="Web and Mobile Apps page">Web & Mobile Apps</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="Game Development page">Game Development</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="Streaming page">Streaming</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="VPN page">VPN</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="SaaS Platforms page">SaaS Platforms</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="Cloud Hosting for Blockchain page">Cloud Hosting for Blockchain</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" aria-label="Startup Resources page">Startup Resources</a></li>
           </ul>
         </div>
 
         <!-- Contact section -->
+        <div aria-labelledby="contact-heading">
+          <h2 id="contact-heading" class="font-bold font-inter text-charcoal">Contact</h2>
 
-        <div>
-          <h2 class="font-bold">Contact</h2>
           <ul class="mt-2 space-y-1 font-inter">
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Support</a>
-            </li>
-            <li><a href="#" class="text-blue-gray text-sm">Sales</a></li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Report Abuse</a>
-            </li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">System Status</a>
-            </li>
-            <li>
-              <a href="#" class="text-blue-gray text-sm">Share your ideas</a>
-            </li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Contact support">Support</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Contact sales">Sales</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Report abuse or issues">Report Abuse</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Check system status">System Status</a></li>
+            <li><a href="#" class="text-blue-gray text-sm" role="link" aria-label="Share your ideas with us">Share your ideas</a></li>
           </ul>
         </div>
       </div>
@@ -1824,9 +1068,7 @@
         <!-- Company Section -->
 
         <details class="group py-2 border-b-[1px] border-[#d6dcea]">
-          <summary
-            class="flex justify-between items-center cursor-pointer font-bold list-none"
-          >
+          <summary class="flex justify-between items-center cursor-pointer font-bold list-none">
             <h2 class="font-inter text-charcoal">Company</h2>
             <span class="text-sm group-open:rotate-180 transition-transform">
               <svg class="text-blue-gray h-4 w-4">
@@ -1864,13 +1106,9 @@
         <!-- Products Section -->
 
         <details class="group py-2 border-b-[1px] border-[#d6dcea]">
-          <summary
-            class="flex justify-between items-center cursor-pointer font-bold list-none"
-          >
+          <summary class="flex justify-between items-center cursor-pointer font-bold list-none">
             <h2 class="font-inter text-charcoal">Products</h2>
-            <span
-              class="arrow text-sm group-open:rotate-180 transition-transform"
-            >
+            <span class="arrow text-sm group-open:rotate-180 transition-transform">
               <svg class="text-blue-gray h-4 w-4">
                 <use href="./public/spritesheet.svg#icon--Arrow-Down"></use>
               </svg>
@@ -1909,9 +1147,7 @@
             <li><a href="#" class="text-blue-gray text-sm">API</a></li>
             <li><a href="#" class="text-blue-gray text-sm">Uptime</a></li>
             <li>
-              <a href="#" class="text-blue-gray text-sm"
-                >Identity Access Management</a
-              >
+              <a href="#" class="text-blue-gray text-sm">Identity Access Management</a>
             </li>
             <li><a href="#" class="text-blue-gray text-sm">Cloudways</a></li>
           </ul>
@@ -1920,13 +1156,9 @@
         <!-- Resources Section -->
 
         <details class="group py-2 border-b-[1px] border-[#d6dcea]">
-          <summary
-            class="flex justify-between items-center cursor-pointer font-bold list-none"
-          >
+          <summary class="flex justify-between items-center cursor-pointer font-bold list-none">
             <h2 class="font-inter text-charcoal">Resources</h2>
-            <span
-              class="arrow text-sm group-open:rotate-180 transition-transform"
-            >
+            <span class="arrow text-sm group-open:rotate-180 transition-transform">
               <svg class="text-blue-gray h-4 w-4">
                 <use href="./public/spritesheet.svg#icon--Arrow-Down"></use>
               </svg>
@@ -1947,9 +1179,7 @@
               <a href="#" class="text-blue-gray text-sm">Currents Research</a>
             </li>
             <li>
-              <a href="#" class="text-blue-gray text-sm"
-                >Hatch Startup Program</a
-              >
+              <a href="#" class="text-blue-gray text-sm">Hatch Startup Program</a>
             </li>
             <li>
               <a href="#" class="text-blue-gray text-sm">Wavemakers Program</a>
@@ -1986,13 +1216,9 @@
         <!-- Solutions Section -->
 
         <details class="group py-2 border-b-[1px] border-[#d6dcea]">
-          <summary
-            class="flex justify-between items-center cursor-pointer font-bold list-none"
-          >
+          <summary class="flex justify-between items-center cursor-pointer font-bold list-none">
             <h2 class="font-inter text-charcoal">Solutions</h2>
-            <span
-              class="arrow text-sm group-open:rotate-180 transition-transform"
-            >
+            <span class="arrow text-sm group-open:rotate-180 transition-transform">
               <svg class="text-blue-gray h-4 w-4">
                 <use href="./public/spritesheet.svg#icon--Arrow-Down"></use>
               </svg>
@@ -2021,9 +1247,7 @@
               <a href="#" class="text-blue-gray text-sm">SaaS Platforms</a>
             </li>
             <li>
-              <a href="#" class="text-blue-gray text-sm"
-                >Cloud Hosting for Blockchain</a
-              >
+              <a href="#" class="text-blue-gray text-sm">Cloud Hosting for Blockchain</a>
             </li>
             <li>
               <a href="#" class="text-blue-gray text-sm">Startup Resources</a>
@@ -2034,13 +1258,9 @@
         <!-- Contact Section -->
 
         <details class="group py-2 border-b-[1px] border-[#d6dcea]">
-          <summary
-            class="flex justify-between items-center cursor-pointer font-bold list-none"
-          >
+          <summary class="flex justify-between items-center cursor-pointer font-bold list-none">
             <h2 class="font-inter text-charcoal">Contact</h2>
-            <span
-              class="arrow text-sm group-open:rotate-180 transition-transform"
-            >
+            <span class="arrow text-sm group-open:rotate-180 transition-transform">
               <svg class="text-blue-gray h-4 w-4">
                 <use href="./public/spritesheet.svg#icon--Arrow-Down"></use>
               </svg>
@@ -2064,9 +1284,7 @@
         </details>
       </div>
 
-      <div
-        class="flex flex-col md:flex-row gap-8 items-center md:justify-between text-blue-gray mt-20 max-w-[68rem] mx-auto"
-      >
+      <div class="flex flex-col md:flex-row gap-8 items-center md:justify-between text-blue-gray mt-20 max-w-[68rem] mx-auto">
         <div class="flex flex-wrap justify-center gap-4 font-inter text-sm">
           <svg class="text-blue-700 h-6 w-6">
             <use href="./public/spritesheet.svg#icon-digital-ocean"></use>
@@ -2076,39 +1294,17 @@
           <a href="#">Cookie Preferences</a>
         </div>
 
-        <div
-          class="flex flex-wrap items-center justify-center gap-4 w-48 md:w-max mx-auto md:mx-0"
-        >
-          <svg class="text-blue-gray h-6 w-6">
-            <use href="./public/spritesheet.svg#icon--Twitter"></use>
-          </svg>
-          <svg class="text-blue-gray h-6 w-6">
-            <use href="./public/spritesheet.svg#icon--Instagram"></use>
-          </svg>
-          <svg class="text-blue-gray h-6 w-6">
-            <use href="./public/spritesheet.svg#icon--Facebook"></use>
-          </svg>
-          <svg class="text-blue-gray h-6 w-6">
-            <use href="./public/spritesheet.svg#icon--Discord"></use>
-          </svg>
-          <svg class="text-blue-gray h-6 w-6">
-            <use href="./public/spritesheet.svg#icon--Reddit"></use>
-          </svg>
-          <svg class="text-blue-gray h-6 w-6">
-            <use href="./public/spritesheet.svg#icon--Youtube"></use>
-          </svg>
-          <svg class="text-blue-gray h-6 w-6">
-            <use href="./public/spritesheet.svg#icon--Linkedin"></use>
-          </svg>
-          <svg class="text-blue-gray h-6 w-6">
-            <use href="./public/spritesheet.svg#icon--Github"></use>
-          </svg>
-          <svg class="text-blue-gray h-6 w-6">
-            <use href="./public/spritesheet.svg#icon--Glassdoor"></use>
-          </svg>
-          <svg class="text-blue-gray h-6 w-6">
-            <use href="./public/spritesheet.svg#icon--BuiltInNYC"></use>
-          </svg>
+        <div class="flex flex-wrap items-center justify-center gap-4 w-48 md:w-max mx-auto md:mx-0">
+          <svg class="text-blue-gray h-6 w-6"><use href="./public/spritesheet.svg#icon--Twitter"></use></svg>
+          <svg class="text-blue-gray h-6 w-6"><use href="./public/spritesheet.svg#icon--Instagram"></use></svg>
+          <svg class="text-blue-gray h-6 w-6"><use href="./public/spritesheet.svg#icon--Facebook"></use></svg>
+          <svg class="text-blue-gray h-6 w-6"><use href="./public/spritesheet.svg#icon--Discord"></use></svg>
+          <svg class="text-blue-gray h-6 w-6"><use href="./public/spritesheet.svg#icon--Reddit"></use></svg>
+          <svg class="text-blue-gray h-6 w-6"><use href="./public/spritesheet.svg#icon--Youtube"></use></svg>
+          <svg class="text-blue-gray h-6 w-6"><use href="./public/spritesheet.svg#icon--Linkedin"></use></svg>
+          <svg class="text-blue-gray h-6 w-6"><use href="./public/spritesheet.svg#icon--Github"></use></svg>
+          <svg class="text-blue-gray h-6 w-6"><use href="./public/spritesheet.svg#icon--Glassdoor"></use></svg>
+          <svg class="text-blue-gray h-6 w-6"><use href="./public/spritesheet.svg#icon--BuiltInNYC"></use></svg>
         </div>
       </div>
     </footer>
