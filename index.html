@@ -42,37 +42,50 @@
             class="menu w-full h-[calc(100vh-4rem)] overflow-y-scroll absolute bg-white top-[calc(100%+2px)] left-0 px-6 pt-6 pb-20 font-inter"
           >
             <div class="grid grid-cols-9 gap-14 bg-white">
+              <!-- 1st column Featured Productuts -->
               <div class="col-span-3 p-8 border-2 bg-light-blue rounded-3xl">
-                <p class="text-sm mb-3 pl-3 text-[#0a1632] font-semibold">
+                <h2 class="text-sm mb-3 pl-3 text-[#0a1632] font-semibold">
                   Featured Products
-                </p>
-                <ul class="flex flex-col">
+                </h2>
+                <ul class="flex flex-col" aria-label="Featured Products">
                   <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
-                    <a href="#">
+                    <a
+                      href="#"
+                      aria-label="Droplets - Scalable virtual machines"
+                    >
                       <p class="text-charcoal text-lg">Droplets</p>
                       <p class="text-blue-gray">Scalable virtual machines</p>
                     </a>
                   </li>
                   <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
-                    <a href="#">
+                    <a
+                      href="#"
+                      aria-label="Kubernetes - Scalable virtual machines"
+                    >
                       <p class="text-charcoal text-lg">Kubernetes</p>
                       <p class="text-blue-gray">Scalable virtual machines</p>
                     </a>
                   </li>
                   <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
-                    <a href="#">
+                    <a
+                      href="#"
+                      aria-label="AI / ML - Build and scale AI models"
+                    >
                       <p class="text-charcoal text-lg">AI / ML</p>
                       <p class="text-blue-gray">Build and scale AI models</p>
                     </a>
                   </li>
                   <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
-                    <a href="#">
+                    <a href="#" aria-label="Cloudways - Managed cloud hosting">
                       <p class="text-charcoal text-lg">Cloudways</p>
                       <p class="text-blue-gray">Managed cloud hosting</p>
                     </a>
                   </li>
                   <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
-                    <a href="#">
+                    <a
+                      href="#"
+                      aria-label="App Platform - Get apps to market faster"
+                    >
                       <p class="text-charcoal text-lg">App Platform</p>
                       <p class="text-blue-gray">Get apps to market faster</p>
                     </a>
@@ -80,157 +93,172 @@
                 </ul>
               </div>
 
-              <!-- 2nd column -->
+              <!-- 2nd Column -->
               <div class="flex flex-col gap-4 col-span-2 py-10">
-                <p class="text-sm text-[#0a1632] font-semibold">Compute</p>
-                <ul class="flex flex-col gap-2">
+                <h2 class="text-sm text-[#0a1632] font-semibold">Compute</h2>
+                <ul class="flex flex-col gap-2" aria-label="Compute Products">
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Droplets</a>
+                    <a href="#" aria-label="Droplets">Droplets</a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Kubernetes</a>
+                    <a href="#" aria-label="Kubernetes">Kubernetes</a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">CPU-Optimized Droplets</a>
+                    <a href="#" aria-label="CPU-Optimized Droplets"
+                      >CPU-Optimized Droplets</a
+                    >
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Functions</a>
+                    <a href="#" aria-label="Functions">Functions</a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">App Platform</a>
-                  </li>
-                </ul>
-
-                <!--  -->
-                <p class="text-sm text-[#0a1632] font-semibold">AI /ML</p>
-                <ul class="flex flex-col gap-2">
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">GPU Droplets</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">1-Click Models</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">GenAI Platform</a>
-                  </li>
-                  <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Bare Metal GPUs</a>
+                    <a href="#" aria-label="App Platform">App Platform</a>
                   </li>
                 </ul>
 
-                <!--  -->
+                <h2 class="text-sm text-[#0a1632] font-semibold">AI /ML</h2>
+                <ul class="flex flex-col gap-2" aria-label="AI/ML Products">
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#" aria-label="GPU Droplets">GPU Droplets</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#" aria-label="1-Click Models">1-Click Models</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#" aria-label="GenAI Platform">GenAI Platform</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#" aria-label="Bare Metal GPUs">Bare Metal GPUs</a>
+                  </li>
+                </ul>
 
-                <p class="text-sm text-[#0a1632] font-semibold">
+                <h2 class="text-sm text-[#0a1632] font-semibold">
                   Backups & Snapshots
-                </p>
-                <ul class="flex flex-col gap-2">
+                </h2>
+                <ul
+                  class="flex flex-col gap-2"
+                  aria-label="Backups & Snapshots Products"
+                >
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Backups</a>
+                    <a href="#" aria-label="Backups">Backups</a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Snapshots</a>
+                    <a href="#" aria-label="Snapshots">Snapshots</a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Snapshooter</a>
+                    <a href="#" aria-label="Snapshooter">Snapshooter</a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Bare Metal GPUs</a>
+                    <a href="#" aria-label="Bare Metal GPUs">Bare Metal GPUs</a>
                   </li>
                 </ul>
               </div>
 
-              <!-- 3rd column -->
-
+              <!-- 3rd Column -->
               <div class="flex flex-col gap-4 col-span-2 py-10">
-                <p class="text-sm text-[#0a1632] font-semibold">Networking</p>
-                <ul class="flex flex-col gap-2">
+                <h2 class="text-sm text-[#0a1632] font-semibold">Networking</h2>
+                <ul
+                  class="flex flex-col gap-2"
+                  aria-label="Networking Products"
+                >
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Virtual Private Cloud (VPC)</a>
+                    <a href="#" aria-label="Virtual Private Cloud (VPC)"
+                      >Virtual Private Cloud (VPC)</a
+                    >
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Cloud Firewalls</a>
+                    <a href="#" aria-label="Cloud Firewalls">Cloud Firewalls</a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Load Balancers</a>
+                    <a href="#" aria-label="Load Balancers">Load Balancers</a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">DNS</a>
+                    <a href="#" aria-label="DNS">DNS</a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">DDoS Protection</a>
+                    <a href="#" aria-label="DDoS Protection">DDoS Protection</a>
                   </li>
                 </ul>
 
-                <!--  -->
-                <p class="text-sm text-[#0a1632] font-semibold">
+                <h2 class="text-sm text-[#0a1632] font-semibold">
                   Managed Databases
-                </p>
-                <ul class="flex flex-col gap-2">
+                </h2>
+                <ul
+                  class="flex flex-col gap-2"
+                  aria-label="Managed Databases Products"
+                >
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">MongoDB</a>
+                    <a href="#" aria-label="MongoDB">MongoDB</a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Kafka</a>
+                    <a href="#" aria-label="Kafka">Kafka</a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">MySQL</a>
+                    <a href="#" aria-label="MySQL">MySQL</a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">PostgreSQL</a>
+                    <a href="#" aria-label="PostgreSQL">PostgreSQL</a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Caching</a>
+                    <a href="#" aria-label="Caching">Caching</a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">OpenSearch</a>
+                    <a href="#" aria-label="OpenSearch">OpenSearch</a>
                   </li>
                 </ul>
               </div>
 
               <!-- 4th Column -->
-
               <div class="flex flex-col gap-4 col-span-2 py-10">
-                <p class="text-sm text-[#0a1632] font-semibold">Storage</p>
-                <ul class="flex flex-col gap-2">
+                <h2 class="text-sm text-[#0a1632] font-semibold">Storage</h2>
+                <ul class="flex flex-col gap-2" aria-label="Storage Products">
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Spaces Object Storage</a>
+                    <a href="#" aria-label="Spaces Object Storage"
+                      >Spaces Object Storage</a
+                    >
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Volume Block Storage</a>
+                    <a href="#" aria-label="Volume Block Storage"
+                      >Volume Block Storage</a
+                    >
                   </li>
                 </ul>
 
-                <!--  -->
-                <p class="text-sm text-[#0a1632] font-semibold">
+                <h2 class="text-sm text-[#0a1632] font-semibold">
                   Developer Tools
-                </p>
-                <ul class="flex flex-col gap-2">
+                </h2>
+                <ul class="flex flex-col gap-2" aria-label="Developer Tools">
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">API</a>
+                    <a href="#" aria-label="API">API</a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">CLI</a>
+                    <a href="#" aria-label="CLI">CLI</a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Support Plans</a>
+                    <a href="#" aria-label="Support Plans">Support Plans</a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Monitoring</a>
+                    <a href="#" aria-label="Monitoring">Monitoring</a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Uptime</a>
+                    <a href="#" aria-label="Uptime">Uptime</a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Identity Access Management</a>
+                    <a href="#" aria-label="Identity Access Management"
+                      >Identity Access Management</a
+                    >
                   </li>
                 </ul>
 
-                <p class="text-sm text-[#0a1632] font-semibold">
+                <h2 class="text-sm text-[#0a1632] font-semibold">
                   Cloud Website Hosting
-                </p>
-                <ul class="flex flex-col gap-2">
+                </h2>
+                <ul
+                  class="flex flex-col gap-2"
+                  aria-label="Cloud Website Hosting Products"
+                >
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Cloudways</a>
+                    <a href="#" aria-label="Cloudways">Cloudways</a>
                   </li>
                 </ul>
               </div>
@@ -249,6 +277,7 @@
             </span>
           </div>
 
+          <!-- Solutions Dropdown -->
           <div
             class="menu w-full h-[calc(100vh-4rem)] overflow-y-scroll absolute bg-white top-[calc(100%+2px)] left-0 px-6 pt-6 pb-20 font-inter"
           >
@@ -257,32 +286,32 @@
               <ul class="flex flex-col gap-6">
                 <li class="flex flex-col gap-2">
                   <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center"
+                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
                     href="#"
                     >AI Machine Learning
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <i class="fa-solid fa-arrow-right text-sm"></i>
                   </a>
                   <p class="text-blue-gray text-sm">
                     Develop, train, and deploy AI apps
                   </p>
-                  <ul class="flex flex-wrap gap-4">
+                  <ul class="flex flex-wrap gap-2">
                     <li>
                       <a
-                        class="text-blue-gray text-sm bg-[#e3e8f4] px-2 py-1 rounded-lg inline-block"
+                        class="text-blue-gray text-sm font-medium bg-[#e3e8f4] hover:bg-blue-600 hover:text-soft-white px-2 py-1 rounded-lg inline-block"
                         href="#"
                         >GPUs</a
                       >
                     </li>
                     <li>
                       <a
-                        class="text-blue-gray text-sm bg-[#e3e8f4] px-2 py-1 rounded-lg inline-block"
+                        class="text-blue-gray text-sm font-medium bg-[#e3e8f4] hover:bg-blue-600 hover:text-soft-white px-2 py-1 rounded-lg inline-block"
                         href="#"
                         >GenAI Platform</a
                       >
                     </li>
                     <li>
                       <a
-                        class="text-blue-gray text-sm bg-[#e3e8f4] px-2 py-1 rounded-lg inline-block"
+                        class="text-blue-gray text-sm font-medium bg-[#e3e8f4] hover:bg-blue-600 hover:text-soft-white px-2 py-1 rounded-lg inline-block"
                         href="#"
                         >1-Click Models</a
                       >
@@ -291,10 +320,10 @@
                 </li>
                 <li class="flex flex-col gap-2">
                   <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center"
+                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
                     href="#"
                     >BlockChain
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <i class="fa-solid fa-arrow-right text-sm"></i>
                   </a>
                   <p class="text-blue-gray text-sm">
                     Infrastructure for decentralized apps
@@ -302,32 +331,32 @@
                 </li>
                 <li class="flex flex-col gap-2">
                   <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center"
+                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
                     href="#"
                     >Blogs, Forums and Content Websites
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <i class="fa-solid fa-arrow-right text-sm"></i>
                   </a>
                   <p class="text-blue-gray text-sm">
                     Lightning-fast, reliable CMS hosting
                   </p>
-                  <ul class="flex flex-wrap gap-4">
+                  <ul class="flex flex-wrap gap-2">
                     <li>
                       <a
-                        class="text-blue-gray text-sm bg-[#e3e8f4] px-2 py-1 rounded-lg inline-block"
+                        class="text-blue-gray text-sm font-medium bg-[#e3e8f4] hover:bg-blue-600 hover:text-soft-white px-2 py-1 rounded-lg inline-block"
                         href="#"
                         >Wordpress</a
                       >
                     </li>
                     <li>
                       <a
-                        class="text-blue-gray text-sm bg-[#e3e8f4] px-2 py-1 rounded-lg inline-block"
+                        class="text-blue-gray text-sm font-medium bg-[#e3e8f4] hover:bg-blue-600 hover:text-soft-white px-2 py-1 rounded-lg inline-block"
                         href="#"
                         >Ghost</a
                       >
                     </li>
                     <li>
                       <a
-                        class="text-blue-gray text-sm bg-[#e3e8f4] px-2 py-1 rounded-lg inline-block"
+                        class="text-blue-gray text-sm font-medium bg-[#e3e8f4] hover:bg-blue-600 hover:text-soft-white px-2 py-1 rounded-lg inline-block"
                         href="#"
                         >Mastodon</a
                       >
@@ -336,25 +365,25 @@
                 </li>
                 <li class="flex flex-col gap-2">
                   <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center"
+                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
                     href="#"
                     >Data Analytics
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <i class="fa-solid fa-arrow-right text-sm"></i>
                   </a>
                   <p class="text-blue-gray text-sm">
                     Real-time data processing at scale
                   </p>
-                  <ul class="flex flex-wrap gap-4">
+                  <ul class="flex flex-wrap gap-2">
                     <li>
                       <a
-                        class="text-blue-gray text-sm bg-[#e3e8f4] px-2 py-1 rounded-lg inline-block"
+                        class="text-blue-gray text-sm font-medium bg-[#e3e8f4] hover:bg-blue-600 hover:text-soft-white px-2 py-1 rounded-lg inline-block"
                         href=""
                         >Data Streaming</a
                       >
                     </li>
                     <li>
                       <a
-                        class="text-blue-gray text-sm bg-[#e3e8f4] px-2 py-1 rounded-lg inline-block"
+                        class="text-blue-gray text-sm font-medium bg-[#e3e8f4] hover:bg-blue-600 hover:text-soft-white px-2 py-1 rounded-lg inline-block"
                         href=""
                         >AdTech & Martech</a
                       >
@@ -366,24 +395,25 @@
               <ul class="flex flex-col gap-6">
                 <li class="flex flex-col gap-2">
                   <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center"
+                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
                     href="#"
-                    >Developer Tools <i class="fa-solid fa-arrow-right"></i
+                    >Developer Tools
+                    <i class="fa-solid fa-arrow-right text-sm"></i
                   ></a>
                   <p class="text-blue-gray text-sm">
                     DevOps and CI/CD solutions
                   </p>
-                  <ul class="flex flex-wrap gap-4">
+                  <ul class="flex flex-wrap gap-2">
                     <li>
                       <a
-                        class="text-blue-gray text-sm bg-[#e3e8f4] px-2 py-1 rounded-lg inline-block"
+                        class="text-blue-gray text-sm font-medium bg-[#e3e8f4] hover:bg-blue-600 hover:text-soft-white px-2 py-1 rounded-lg inline-block"
                         href="#"
                         >CI/CD</a
                       >
                     </li>
                     <li>
                       <a
-                        class="text-blue-gray text-sm bg-[#e3e8f4] px-2 py-1 rounded-lg inline-block"
+                        class="text-blue-gray text-sm font-medium bg-[#e3e8f4] hover:bg-blue-600 hover:text-soft-white px-2 py-1 rounded-lg inline-block"
                         href="#"
                         >Prototyping</a
                       >
@@ -392,25 +422,25 @@
                 </li>
                 <li class="flex flex-col gap-2">
                   <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center"
+                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
                     href="#"
                     >Digital Marketing Agencies
-                    <i class="fa-solid fa-arrow-right"></i
+                    <i class="fa-solid fa-arrow-right text-sm"></i
                   ></a>
                   <p class="text-blue-gray text-sm">
                     Power your clients websites and campaigns
                   </p>
-                  <ul class="flex flex-wrap gap-4">
+                  <ul class="flex flex-wrap gap-2">
                     <li>
                       <a
-                        class="text-blue-gray text-sm bg-[#e3e8f4] px-2 py-1 rounded-lg inline-block"
+                        class="text-blue-gray text-sm font-medium bg-[#e3e8f4] hover:bg-blue-600 hover:text-soft-white px-2 py-1 rounded-lg inline-block"
                         href="#"
                         >Freelancer</a
                       >
                     </li>
                     <li>
                       <a
-                        class="text-blue-gray text-sm bg-[#e3e8f4] px-2 py-1 rounded-lg inline-block"
+                        class="text-blue-gray text-sm font-medium bg-[#e3e8f4] hover:bg-blue-600 hover:text-soft-white px-2 py-1 rounded-lg inline-block"
                         href="#"
                         >IT Consulting</a
                       >
@@ -419,31 +449,31 @@
                 </li>
                 <li class="flex flex-col gap-2">
                   <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center"
+                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
                     href="#"
-                    >Ecommerce <i class="fa-solid fa-arrow-right"></i
+                    >Ecommerce <i class="fa-solid fa-arrow-right text-sm"></i
                   ></a>
                   <p class="text-blue-gray text-sm">
                     Build beatiful online storefronts
                   </p>
-                  <ul class="flex flex-wrap gap-4">
+                  <ul class="flex flex-wrap gap-2">
                     <li>
                       <a
-                        class="text-blue-gray text-sm bg-[#e3e8f4] px-2 py-1 rounded-lg inline-block"
+                        class="text-blue-gray text-sm font-medium bg-[#e3e8f4] hover:bg-blue-600 hover:text-soft-white px-2 py-1 rounded-lg inline-block"
                         href="#"
                         >Dropshipping</a
                       >
                     </li>
                     <li>
                       <a
-                        class="text-blue-gray text-sm bg-[#e3e8f4] px-2 py-1 rounded-lg inline-block"
+                        class="text-blue-gray text-sm font-medium bg-[#e3e8f4] hover:bg-blue-600 hover:text-soft-white px-2 py-1 rounded-lg inline-block"
                         href="#"
                         >WooCommerce</a
                       >
                     </li>
                     <li>
                       <a
-                        class="text-blue-gray text-sm bg-[#e3e8f4] px-2 py-1 rounded-lg inline-block"
+                        class="text-blue-gray text-sm font-medium bg-[#e3e8f4] hover:bg-blue-600 hover:text-soft-white px-2 py-1 rounded-lg inline-block"
                         href="#"
                         >Magento</a
                       >
@@ -452,17 +482,17 @@
                 </li>
                 <li class="flex flex-col gap-2">
                   <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center"
+                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
                     href="#"
                     >Game Development
                   </a>
                   <p class="text-blue-gray text-sm">
                     Low-latency multiplayer servers
                   </p>
-                  <ul class="flex flex-wrap gap-4">
+                  <ul class="flex flex-wrap gap-2">
                     <li>
                       <a
-                        class="text-blue-gray text-sm bg-[#e3e8f4] px-2 py-1 rounded-lg inline-block"
+                        class="text-blue-gray text-sm font-medium bg-[#e3e8f4] hover:bg-blue-600 hover:text-soft-white px-2 py-1 rounded-lg inline-block"
                         href="#"
                         >Minecraft Hosting</a
                       >
@@ -474,9 +504,9 @@
               <ul class="flex flex-col gap-6">
                 <li class="flex flex-col gap-2">
                   <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center"
+                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
                     href="#"
-                    >IOT <i class="fa-solid fa-arrow-right"></i
+                    >IOT <i class="fa-solid fa-arrow-right text-sm"></i
                   ></a>
                   <p class="text-blue-gray text-sm">
                     Connect to the power of the cloud
@@ -484,9 +514,9 @@
                 </li>
                 <li class="flex flex-col gap-2">
                   <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center"
+                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
                     href="#"
-                    >ISVs <i class="fa-solid fa-arrow-right"></i
+                    >ISVs <i class="fa-solid fa-arrow-right text-sm"></i
                   ></a>
                   <p class="text-blue-gray text-sm">
                     Streamlined ISV application development
@@ -494,17 +524,18 @@
                 </li>
                 <li class="flex flex-col gap-2">
                   <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center"
+                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
                     href="#"
-                    >Secure Web Hosting <i class="fa-solid fa-arrow-right"></i
+                    >Secure Web Hosting
+                    <i class="fa-solid fa-arrow-right text-sm"></i
                   ></a>
                   <p class="text-blue-gray text-sm">
                     Powerful protection DDoS and more
                   </p>
-                  <ul class="flex flex-wrap gap-4">
+                  <ul class="flex flex-wrap gap-2">
                     <li>
                       <a
-                        class="text-blue-gray text-sm bg-[#e3e8f4] px-2 py-1 rounded-lg inline-block"
+                        class="text-blue-gray text-sm font-medium bg-[#e3e8f4] hover:bg-blue-600 hover:text-soft-white px-2 py-1 rounded-lg inline-block"
                         href="#"
                         >Private VPN</a
                       >
@@ -513,9 +544,10 @@
                 </li>
                 <li class="flex flex-col gap-2">
                   <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center"
+                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
                     href="#"
-                    >Video Streaming <i class="fa-solid fa-arrow-right"></i
+                    >Video Streaming
+                    <i class="fa-solid fa-arrow-right text-sm"></i
                   ></a>
                   <p class="text-blue-gray text-sm">
                     High-bandwidth, low-latency delivery
@@ -526,9 +558,10 @@
               <ul class="flex flex-col gap-6">
                 <li class="flex flex-col gap-2">
                   <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center"
+                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
                     href="#"
-                    >Web and Mobile Apps <i class="fa-solid fa-arrow-right"></i
+                    >Web and Mobile Apps
+                    <i class="fa-solid fa-arrow-right text-sm"></i
                   ></a>
                   <p class="text-blue-gray text-sm">
                     Simple cross-platform app hosting
@@ -536,30 +569,28 @@
                 </li>
                 <li class="flex flex-col gap-2">
                   <a
-                    class="text-charcoal font-semibold text-sm flex gap-2 items-center"
+                    class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
                     href="#"
-                    >Website Hosting <i class="fa-solid fa-arrow-right"></i
+                    >Website Hosting
+                    <i class="fa-solid fa-arrow-right text-sm"></i
                   ></a>
                   <p class="text-blue-gray text-sm">
                     Fast page loads and reliable site uptime
                   </p>
                 </li>
                 <li class="flex flex-col gap-2">
-                  <a
+                  <p
                     class="text-charcoal font-semibold text-sm flex gap-2 items-center"
-                    href="#"
-                    >Questions <i class="fa-solid fa-arrow-right"></i
-                  ></a>
-                  <p class="text-blue-gray text-sm">
-                    Lightning-fast, reliable CMS hosting
+                  >
+                    Questions?
                   </p>
                   <span
                     class="bg-[#b5f6ff] p-4 rounded-2xl border-2 border-[#a5e0ea]"
                     ><a
-                      class="text-charcoal font-semibold text-sm flex gap-2 items-center"
+                      class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
                       href="#"
                       >Talk to an expert
-                      <i class="fa-solid fa-arrow-right"></i></a
+                      <i class="fa-solid fa-arrow-right text-sm"></i></a
                   ></span>
                 </li>
               </ul>
@@ -598,7 +629,12 @@
                   </li>
                   <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
                     <a href="#">
-                      <p class="text-charcoal text-lg">CSS-Tricks</p>
+                      <p class="text-charcoal text-lg flex gap-3 items-center">
+                        CSS-Tricks
+                        <i
+                          class="fa-solid fa-arrow-right text-xs transform font-thin -rotate-45"
+                        ></i>
+                      </p>
                       <p class="text-blue-gray">All things web design</p>
                     </a>
                   </li>
@@ -659,10 +695,20 @@
                     <a href="#">Open Source Sponsorships</a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Hacktoberfest</a>
+                    <a class="flex items-center gap-3" href="#"
+                      >Hacktoberfest
+                      <i
+                        class="fa-solid fa-arrow-right text-xs transform font-thin -rotate-45"
+                      ></i
+                    ></a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
-                    <a href="#">Deploy 2025</a>
+                    <a class="flex items-center gap-3" href="#"
+                      >Deploy 2025
+                      <i
+                        class="fa-solid fa-arrow-right text-xs transform font-thin -rotate-45"
+                      ></i
+                    ></a>
                   </li>
                   <li class="font-medium text-blue-gray hover:text-charcoal">
                     <a href="#">DO Impact</a>
@@ -707,15 +753,164 @@
             </div>
           </div>
         </li>
-        <li
-          class="group text-blue-gray font-inter flex gap-2 items-center px-4 py-2 hover:bg-[#eff2fb] rounded-2xl"
-        >
-          Partners
-          <span class="text-sm group-hover:rotate-180 transition-transform">
-            <svg class="text-blue-gray h-4 w-4">
-              <use href="./public/spritesheet.svg#icon--Arrow-Down"></use>
-            </svg>
-          </span>
+        <li class="nav-item group">
+          <div
+            class="nav-item-product text-blue-gray font-inter flex gap-2 items-center px-4 py-2 hover:bg-[#eff2fb] rounded-2xl"
+          >
+            Partners
+            <span class="text-sm group-hover:rotate-180 transition-transform">
+              <svg class="text-blue-gray h-4 w-4">
+                <use href="./public/spritesheet.svg#icon--Arrow-Down"></use>
+              </svg>
+            </span>
+          </div>
+
+          <!-- Partners dropdown -->
+          <div
+            class="menu w-full h-[calc(100vh-4rem)] overflow-y-scroll absolute bg-white top-[calc(100%+2px)] left-0 px-6 pt-6 pb-20 font-inter"
+          >
+            <div class="grid grid-cols-9 gap-14 bg-white">
+              <!-- 1st Column DigitialOcean Partner Programs -->
+              <div class="col-span-3 p-8 border-2 bg-light-blue rounded-3xl">
+                <p class="text-sm mb-3 pl-3 text-[#0a1632] font-semibold">
+                  DigitialOcean Partner Programs
+                </p>
+                <ul class="flex flex-col">
+                  <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
+                    <a class="text-charcoal text-lg" href="#">
+                      Become a Partner
+                    </a>
+                  </li>
+                  <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
+                    <a class="text-charcoal text-lg" href="#">
+                      Partner Services Program
+                    </a>
+                  </li>
+                  <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
+                    <a class="text-charcoal text-lg" href="#">
+                      ISV Partner Program
+                    </a>
+                  </li>
+                  <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
+                    <a class="text-charcoal text-lg" href="#"> Marketplace </a>
+                  </li>
+                  <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
+                    <a class="text-charcoal text-lg" href="#">
+                      Hatch Partner Program
+                    </a>
+                  </li>
+                  <li class="p-3 rounded-2xl hover:bg-[#eff2fb]">
+                    <a class="text-charcoal text-lg" href="#">
+                      Connect with a Parner
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 2nd Column DigitialOcean Partner Programs -->
+              <div class="flex flex-col gap-4 col-span-2 py-10">
+                <p class="text-sm text-[#0a1632] font-semibold">
+                  Partner Programs Resources
+                </p>
+                <ul class="flex flex-col gap-2">
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">Customer Stories</a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a class="flex justify-between items-center" href="#"
+                      >DigitalOcean Onboarding Series
+                      <i
+                        class="fa-solid fa-arrow-right text-xs transform font-thin -rotate-45"
+                      ></i
+                    ></a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a class="flex justify-between items-center" href="#"
+                      >Training for Agencies and Freelancers
+                      <i
+                        class="fa-solid fa-arrow-right text-xs transform font-thin -rotate-45"
+                      ></i
+                    ></a>
+                  </li>
+                  <li class="font-medium text-blue-gray hover:text-charcoal">
+                    <a href="#">Price Estimate Calculator</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 3rd Column DigitialOcean Partner Programs -->
+              <div class="flex flex-col gap-4 col-span-2 py-10">
+                <p class="text-sm text-[#0a1632] font-semibold">
+                  Featured Partner Articles
+                </p>
+                <ul class="flex flex-col gap-4">
+                  <li
+                    class="font-medium flex flex-col gap-2 bg-light-blue border-2 px-3 py-3 text-charcoal rounded-xl"
+                  >
+                    <p>Cloud cost optimization best practices</p>
+                    <a
+                      class="flex gap-3 items-center relative w-max after:bg-charcoal"
+                      href="#"
+                      >Read more <i class="fa-solid fa-arrow-right text-sm"></i
+                    ></a>
+                  </li>
+                  <li
+                    class="font-medium flex flex-col gap-2 bg-light-blue border-2 px-3 py-3 text-charcoal rounded-xl"
+                  >
+                    <p>How to choose a cloud provider</p>
+                    <a
+                      class="flex gap-3 items-center relative w-max after:bg-charcoal"
+                      href="#"
+                      >Read more <i class="fa-solid fa-arrow-right text-sm"></i
+                    ></a>
+                  </li>
+                  <li
+                    class="font-medium flex flex-col gap-2 bg-light-blue border-2 px-3 py-3 text-charcoal rounded-xl"
+                  >
+                    <p>
+                      DigitalOcean vs. AWS Lightsail: Which Cloud Platform is
+                      Right for You?
+                    </p>
+                    <a
+                      class="flex gap-3 items-center relative w-max after:bg-charcoal"
+                      href="#"
+                      >Read more <i class="fa-solid fa-arrow-right text-sm"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 4th Column -->
+              <ul class="flex flex-col gap-4 col-span-2 py-10">
+                <li class="flex flex-col gap-2">
+                  <p
+                    class="text-charcoal font-semibold text-sm flex gap-2 items-center"
+                  >
+                    Questions?
+                  </p>
+                  <span
+                    class="bg-[#b5f6ff] p-4 rounded-2xl border-2 border-[#a5e0ea]"
+                    ><a
+                      class="text-charcoal font-semibold text-sm flex gap-2 items-center relative w-max after:bg-charcoal"
+                      href="#"
+                      >Talk to an expert
+                      <i class="fa-solid fa-arrow-right text-sm"></i></a
+                  ></span>
+                </li>
+
+                <li class="flex flex-col gap-2">
+                  <p class="text-sm text-[#0a1632] font-semibold">
+                    New Partnerships
+                  </p>
+                  <span
+                    class="bg-amber-200 p-4 rounded-2xl border-2 border-amber-300"
+                    ><a
+                      class="text-charcoal font-semibold text-sm flex gap-2 items-center relative after:bg-charcoal"
+                      href="#"
+                      >1-Click Models powered by Hugging Face
+                      <i class="fa-solid fa-arrow-right text-sm"></i></a
+                  ></span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </li>
         <li
           class="text-blue-gray font-inter px-4 py-2 hover:bg-[#eff2fb] rounded-2xl"
@@ -858,7 +1053,7 @@
       </p>
       <a
         href="#"
-        class="relative flex w-max items-center gap-3 m-auto mb-16 font-semibold after:bg-black"
+        class="relative flex w-max items-center gap-3 m-auto mb-16 font-semibold after:bg-charcoal"
         >See all products
         <svg
           viewBox="0 0 18 12"
@@ -924,7 +1119,7 @@
 
           <a
             href="https://www.digitalocean.com/products/droplets"
-            class="relative flex w-max items-center gap-3 font-semibold after:bg-black"
+            class="relative flex w-max items-center gap-3 font-semibold after:bg-charcoal"
           >
             Learn more
             <svg
@@ -979,7 +1174,7 @@
 
           <a
             href="https://www.digitalocean.com/products/kubernetes"
-            class="relative flex w-max items-center gap-3 font-semibold after:bg-black"
+            class="relative flex w-max items-center gap-3 font-semibold after:bg-charcoal"
           >
             Learn more
             <svg
@@ -1034,7 +1229,7 @@
 
           <a
             href="https://www.digitalocean.com/products/ai-ml"
-            class="relative flex w-max items-center gap-3 font-semibold after:bg-black"
+            class="relative flex w-max items-center gap-3 font-semibold after:bg-charcoal"
           >
             Learn more
             <svg
@@ -1089,7 +1284,7 @@
 
           <a
             href="https://www.digitalocean.com/products/app-platform"
-            class="relative flex w-max items-center gap-3 font-semibold after:bg-black"
+            class="relative flex w-max items-center gap-3 font-semibold after:bg-charcoal"
           >
             Learn more
             <svg
@@ -1144,7 +1339,7 @@
 
           <a
             href="https://www.digitalocean.com/products/managed-databases"
-            class="relative flex w-max items-center gap-3 font-semibold after:bg-black"
+            class="relative flex w-max items-center gap-3 font-semibold after:bg-charcoal"
           >
             Learn more
             <svg
@@ -1203,12 +1398,13 @@
               class="underline text-blue-700"
               href="https://www.digitalocean.com/products/block-storage"
               >Volumes block storage</a
-            >are business-ready storage solutions.
+            >
+            are business-ready storage solutions.
           </p>
 
           <a
             href="#"
-            class="relative flex w-max items-center gap-3 font-semibold after:bg-black"
+            class="relative flex w-max items-center gap-3 font-semibold after:bg-charcoal"
           >
             Learn more
             <svg
