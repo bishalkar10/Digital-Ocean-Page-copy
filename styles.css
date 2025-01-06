@@ -41,10 +41,19 @@ a:hover::after {
 }
 
 .nav-item .menu {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0s linear 0.3s;
 }
+
 .nav-item:hover .menu {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease, visibility 0s linear 0.3s;
+}
+
+.nav-item:hover .menu {
+  transition-delay: 0.5s;
 }
 
 .nav-item-product {

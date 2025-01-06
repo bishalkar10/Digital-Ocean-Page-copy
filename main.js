@@ -119,6 +119,7 @@ const companyLogo = document.getElementById('company-logo--icon');
 const fullImage = document.getElementById('company_full_image');
 const figure = document.querySelector('#author--details');
 const logoButtons = document.querySelectorAll('#logo-btn-container li');
+console.log(logoButtons);
 
 let currentIndex = 0;
 
@@ -143,11 +144,6 @@ function updateUI(index) {
   // Toggle 'selected' class for logo buttons
   logoButtons.forEach((btn, btnIndex) => {
     btn.classList.toggle('selected', btnIndex === index);
-  });
-
-  // Update nav dots or any other UI elements
-  navDots.forEach((dot, dotIndex) => {
-    dot.classList.toggle('active', dotIndex === index);
   });
 
   // Update navigation dots
@@ -184,6 +180,7 @@ navDots.forEach((dot, dotIndex) => {
 
 logoButtons.forEach((button) => {
   button.addEventListener('click', () => {
+    console.log('clicked button');
     const index = parseInt(button.getAttribute('data-index'), 10);
     updateUI(index);
   });
