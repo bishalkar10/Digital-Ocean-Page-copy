@@ -732,6 +732,10 @@ p {
   height: calc(100vh - 4rem);
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -769,6 +773,10 @@ p {
   width: max-content;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .max-w-\[26rem\] {
   max-width: 26rem;
 }
@@ -787,6 +795,10 @@ p {
 
 .max-w-\[71rem\] {
   max-width: 71rem;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .translate-y-1\/2 {
@@ -821,6 +833,10 @@ p {
 
 .grid-cols-9 {
   grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -871,10 +887,6 @@ p {
   gap: 2rem;
 }
 
-.gap-9 {
-  gap: 2.25rem;
-}
-
 .space-y-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
@@ -885,8 +897,16 @@ p {
   overflow: hidden;
 }
 
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+
 .overflow-y-scroll {
   overflow-y: scroll;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 .rounded-2xl {
@@ -925,6 +945,10 @@ p {
   border-bottom-width: 1px;
 }
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
 .border-\[\#a5e0ea\] {
   --tw-border-opacity: 1;
   border-color: rgb(165 224 234 / var(--tw-border-opacity, 1));
@@ -943,6 +967,11 @@ p {
 .border-blue-gray {
   --tw-border-opacity: 1;
   border-color: rgb(77 91 124 / var(--tw-border-opacity, 1));
+}
+
+.border-charcoal {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 12 42 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#b5f6ff\] {
@@ -1430,6 +1459,10 @@ a:hover::after {
     grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
   }
 
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1448,6 +1481,27 @@ a:hover::after {
 
   .md\:gap-12 {
     gap: 3rem;
+  }
+
+  .md\:gap-6 {
+    gap: 1.5rem;
+  }
+
+  .md\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .md\:gap-16 {
+    gap: 4rem;
+  }
+
+  .md\:border-b {
+    border-bottom-width: 1px;
+  }
+
+  .md\:border-charcoal {
+    --tw-border-opacity: 1;
+    border-color: rgb(0 12 42 / var(--tw-border-opacity, 1));
   }
 
   .md\:bg-\[url\(\'\/public\/hero_background\.svg\'\)\] {
@@ -1472,6 +1526,14 @@ a:hover::after {
 
   .md\:pt-10 {
     padding-top: 2.5rem;
+  }
+
+  .md\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
+  .md\:text-start {
+    text-align: start;
   }
 
   .md\:text-5xl {

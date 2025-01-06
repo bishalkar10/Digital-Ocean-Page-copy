@@ -20,7 +20,7 @@
     />
   </head>
   <body>
-    <header class="bg-white fixed z-50 top-0 left-0 right-0 px-6 py-4 flex items-center justify-between border-b-2 border-blue-gray">
+    <header class="bg-white fixed z-50 top-0 left-0 right-0 px-6 py-4 flex items-center justify-between border-b border-blue-gray">
       <svg class="text-blue-700 h-8 w-8">
         <use href="./public/spritesheet.svg#icon-digital-ocean"></use>
       </svg>
@@ -905,7 +905,7 @@
       </div>
     </section>
 
-    <section class="w-full px-6 py-20 bg-white">
+    <section class="w-full px-6 py-20 bg-white max-w-[68rem] mx-auto">
       <div class="flex flex-col gap-4 pb-16">
         <h2 class="font-bold text-[28px] text-center">Learn from the experts</h2>
         <p class="text-center text-blue-gray max-w-[40rem] mx-auto">
@@ -914,30 +914,45 @@
         </p>
       </div>
 
-      <div class="flex flex-col gap-6">
-        <div id="content--btn-container">
-          <button data-key="product_document" class="selected py-2 px-4 text-blue-gray hover:bg-blue-700 hover:text-white font-inter font-medium rounded-3xl">
+      <div class="w-full flex flex-col gap-6">
+        <div class="flex md:justify-center w-full overflow-x-scroll md:pb-10 md:border-b md:border-charcoal" id="content--btn-container">
+          <button
+            data-key="product_document"
+            class="selected py-2 px-4 text-blue-gray hover:bg-blue-700 hover:text-white font-inter whitespace-nowrap font-medium rounded-3xl"
+          >
             Product documentation
           </button>
-          <button data-key="business_advice" class="py-2 px-4 text-blue-gray hover:bg-blue-700 hover:text-white font-inter font-medium rounded-3xl">
+          <button
+            data-key="business_advice"
+            class="py-2 px-4 text-blue-gray hover:bg-blue-700 hover:text-white font-inter whitespace-nowrap font-medium rounded-3xl"
+          >
             Business Advice
           </button>
-          <button data-key="technical_expertise" class="py-2 px-4 text-blue-gray hover:bg-blue-700 hover:text-white font-inter font-medium rounded-3xl">
+          <button
+            data-key="technical_expertise"
+            class="py-2 px-4 text-blue-gray hover:bg-blue-700 hover:text-white font-inter whitespace-nowrap font-medium rounded-3xl"
+          >
             Technical Expertise
           </button>
         </div>
+        <div class="w-full flex flex-col gap-6 md:gap-12 md:grid md:grid-cols-2">
+          <img
+            id="content--image"
+            class="w-full aspect-[1057/609] block rounded-2xl"
+            src="public/product_documentation.svg"
+            alt="Image of Product documentation"
+          />
 
-        <img id="content--image" class="w-full aspect-[1057/609] rounded-2xl" src="public/product_documentation.svg" alt="Image of Product documentation" />
-
-        <div class="flex flex-col gap-2">
-          <h3 id="content--heading" class="font-bold text-[28px] text-center">Product documentation</h3>
-          <p id="content--paragraph" class="text-center text-blue-gray max-w-[40rem] mx-auto">
-            Learn how to spin up a virtual machine, get started with block storage, and more with in-depth documentation.
-          </p>
-          <a id="content--link" href="#" class="relative flex w-max mx-auto items-center gap-3 font-semibold text-charcoal after:bg--charcoal">
-            <p id="content--link-text">Read the docs</p>
-            <i class="fa-solid fa-arrow-right text-sm"></i>
-          </a>
+          <div class="flex flex-col items-center md:items-start gap-2 md:justify-center">
+            <h3 id="content--heading" class="font-bold text-[28px]">Product documentation</h3>
+            <p id="content--paragraph" class="text-center md:text-start text-blue-gray max-w-[40rem] mx-auto">
+              Learn how to spin up a virtual machine, get started with block storage, and more with in-depth documentation.
+            </p>
+            <a id="content--link" href="#" class="relative flex w-max gap-3 font-semibold text-charcoal after:bg--charcoal">
+              <p id="content--link-text">Read the docs</p>
+              <i class="fa-solid fa-arrow-right text-sm"></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -1113,7 +1128,7 @@
       <div class="md:hidden">
         <!-- Company Section -->
 
-        <details class="group py-2 border-b-[1px] border-[#d6dcea]">
+        <details class="group py-2 border-b border-[#d6dcea]">
           <summary class="flex justify-between items-center cursor-pointer font-bold list-none">
             <h2 class="font-inter text-charcoal">Company</h2>
             <span class="text-sm group-open:rotate-180 transition-transform">
@@ -1151,7 +1166,7 @@
 
         <!-- Products Section -->
 
-        <details class="group py-2 border-b-[1px] border-[#d6dcea]">
+        <details class="group py-2 border-b border-[#d6dcea]">
           <summary class="flex justify-between items-center cursor-pointer font-bold list-none">
             <h2 class="font-inter text-charcoal">Products</h2>
             <span class="arrow text-sm group-open:rotate-180 transition-transform">
@@ -1201,7 +1216,7 @@
 
         <!-- Resources Section -->
 
-        <details class="group py-2 border-b-[1px] border-[#d6dcea]">
+        <details class="group py-2 border-b border-[#d6dcea]">
           <summary class="flex justify-between items-center cursor-pointer font-bold list-none">
             <h2 class="font-inter text-charcoal">Resources</h2>
             <span class="arrow text-sm group-open:rotate-180 transition-transform">
@@ -1261,7 +1276,7 @@
 
         <!-- Solutions Section -->
 
-        <details class="group py-2 border-b-[1px] border-[#d6dcea]">
+        <details class="group py-2 border-b border-[#d6dcea]">
           <summary class="flex justify-between items-center cursor-pointer font-bold list-none">
             <h2 class="font-inter text-charcoal">Solutions</h2>
             <span class="arrow text-sm group-open:rotate-180 transition-transform">
@@ -1303,7 +1318,7 @@
 
         <!-- Contact Section -->
 
-        <details class="group py-2 border-b-[1px] border-[#d6dcea]">
+        <details class="group py-2 border-b border-[#d6dcea]">
           <summary class="flex justify-between items-center cursor-pointer font-bold list-none">
             <h2 class="font-inter text-charcoal">Contact</h2>
             <span class="arrow text-sm group-open:rotate-180 transition-transform">
