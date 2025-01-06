@@ -714,7 +714,7 @@
       </p>
       <a href="#" class="relative flex w-max items-center gap-3 m-auto mb-16 font-semibold after:bg-charcoal"
         >See all products
-        <svg viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4">
+        <svg viewBox="0 0 18 12" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4">
           <path
             d="M12.6033 1.27344L16.6033 5.77344L12.6033 10.2734"
             stroke="currentColor"
@@ -948,7 +948,7 @@
             <p id="content--paragraph" class="text-center md:text-start text-blue-gray max-w-[40rem] mx-auto">
               Learn how to spin up a virtual machine, get started with block storage, and more with in-depth documentation.
             </p>
-            <a id="content--link" href="#" class="relative flex w-max gap-3 font-semibold text-charcoal after:bg--charcoal">
+            <a id="content--link" href="#" class="relative flex items-center w-max gap-3 font-semibold text-charcoal after:bg-charcoal">
               <p id="content--link-text">Read the docs</p>
               <i class="fa-solid fa-arrow-right text-sm"></i>
             </a>
@@ -1001,14 +1001,118 @@
       </div>
     </section>
 
-    <section class="px-6">
+    <!-- Thousands of ISVs and startups run on DigitalOcean -->
+
+    <section class="py-20 px-6">
+      <h2 class="font-bold text-[28px] text-center mb-20">Thousands of ISVs and startups run on DigitalOcean</h2>
+
+      <!-- show when width is greater than 1024 -->
+      <ul id="logo-btn-container" class="hidden lg:flex w-min mx-auto mb-20 rounded-4xl bg-background-blue">
+        <lis
+          class="selected px-6 mx-auto text-charcoal hover:text-white hover:bg-primary-blue py-2 w-40 rounded-4xl flex justify-center transition-all duration-300 ease-linear"
+          data-index="0"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 70 18" width="70">
+            <use href="public/spritesheet.svg#snipitz_logo"></use>
+          </svg>
+        </lis>
+
+        <lis
+          class="px-6 mx-auto text-charcoal hover:text-white hover:bg-primary-blue py-2 w-40 rounded-4xl flex justify-center transition-all duration-300 ease-linear"
+          data-index="1"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 70 18" width="70">
+            <use href="public/spritesheet.svg#scraperapi_logo"></use>
+          </svg>
+        </lis>
+
+        <lis
+          class="px-6 mx-auto text-charcoal hover:text-white hover:bg-primary-blue py-2 w-40 rounded-4xl flex justify-center transition-all duration-300 ease-linear"
+          data-index="2"
+        >
+          <img src="public/zing_logo.png" alt="Zing logo" loading="lazy" />
+        </lis>
+
+        <lis
+          class="px-6 mx-auto text-charcoal hover:text-white hover:bg-primary-blue py-2 w-40 rounded-4xl flex justify-center transition-all duration-300 ease-linear"
+          data-index="3"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 70 18" width="70">
+            <use href="public/spritesheet.svg#bright_data_logo"></use>
+          </svg>
+        </lis>
+
+        <lis
+          class="px-6 mx-auto text-charcoal hover:text-white hover:bg-primary-blue py-2 w-40 rounded-4xl flex justify-center transition-all duration-300 ease-linear"
+          data-index="4"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 70 18" width="70">
+            <use href="public/spritesheet.svg#nitropack_logo"></use>
+          </svg>
+        </lis>
+      </ul>
+
+      <!-- show company logo when width below 1024px -->
+      <div class="md:hidden px-6 mx-auto py-2 bg-blue-600 w-40 text-white rounded-4xl flex justify-center">
+        <img id="company-logo--icon" src="public/snipitz_logo.svg" alt="Company logo icon" loading="lazy" />
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-[40rem] lg:max-w-[68rem] mx-auto">
+        <img id="company_full_image" class="rounded-3xl" src="public/snipitz_full.png" alt="Snipitz logo" loading="lazy" />
+        <div class="flex flex-col justify-center gap-6 lg:px-14">
+          <q id="quote--text" class="font-inter font-bold text-lg">
+            Creating a first-of-its-kind video platform as a startup is a near impossible task without partners that are not only tremendously talented, but
+            have the same forward thinking as you do. DigitalOcean has helped us go from architecture to launch by pairing us with strategic partners who are
+            like-minded and innovative.</q
+          >
+          <figure id="author--details" class="flex flex-col gap-4 md:flex-row">
+            <img
+              id="author--image"
+              class="w-12 aspect-square rounded-full"
+              src="./public/denny_darmo.png"
+              alt="Picture of Denny Darmo, Research Vice President at IDC"
+              loading="lazy"
+            />
+            <figcaption class="font-inter font-bold flex flex-col">
+              <span id="author--name">Denny Darmo</span>
+              <span id="author--title" class="font-inter font-normal">Founder and CEO, Snipitz</span>
+            </figcaption>
+          </figure>
+
+          <a id="link--case-study" href="#" class="relative flex items-center w-max gap-3 font-semibold text-charcoal after:bg-charcoal">
+            <p>Read the case study</p>
+            <i class="fa-solid fa-arrow-right text-sm"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-5 w-max mx-auto mt-10">
+        <div id="nav-dot-container" class="flex gap-3 w-52">
+          <span class="active w-4 h-4 rounded-full bg-blue-300 transition-all duration-300 ease-linear flex-shrink-0"> </span>
+          <span class="w-4 h-4 rounded-full bg-blue-300 transition-all duration-300 ease-linear flex-shrink-0"> </span>
+          <span class="w-4 h-4 rounded-full bg-blue-300 transition-all duration-300 ease-linear flex-shrink-0"> </span>
+          <span class="w-4 h-4 rounded-full bg-blue-300 transition-all duration-300 ease-linear flex-shrink-0"> </span>
+          <span class="w-4 h-4 rounded-full bg-blue-300 transition-all duration-300 ease-linear flex-shrink-0"> </span>
+        </div>
+
+        <div class="nav-btns mx-auto">
+          <button id="prev-btn" class="p-4 aspect-square w-16 bg-blue-500 text-white active:bg-blue-600 rounded-full">
+            <i class="fa-solid fa-arrow-left text-sm"></i>
+          </button>
+          <button id="next-btn" class="p-4 aspect-square w-16 bg-blue-500 text-white active:bg-blue-600 rounded-full">
+            <i class="fa-solid fa-arrow-right text-sm"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-6 py-20">
       <div
         class="flex flex-col bg-[#b5f6ff] md:bg-[url('/public/wave.svg')] md:p-[4rem_1.5rem_5rem] bg-no-repeat bg-bottom max-w-[68rem] mx-auto overflow-hidden rounded-lg"
       >
         <div class="p-[1.5rem_1rem_0] md:p-0">
           <h2 class="text-4xl font-bold text-center mb-4">Get started for Free</h2>
           <p class="text-blue-gray mx-auto text-center max-w-[26rem] mb-10">Sign up and get $200 in credit for your first 60 days with DigitalOcean.*</p>
-          <a class="bg-blue-700 text-white font-bold after:bg-white py-2 px-6 block w-max mx-auto rounded-3xl" href="#">Get started</a>
+          <a class="bg-background-blue text-white font-bold after:bg-white py-2 px-6 block w-max mx-auto rounded-3xl" href="#">Get started</a>
         </div>
         <img class="w-full aspect-[1088/328] md:hidden" src="./public/wave.svg" alt="Picture of a wave" loading="lazy" />
       </div>
@@ -1128,7 +1232,7 @@
       <div class="md:hidden">
         <!-- Company Section -->
 
-        <details class="group py-2 border-b border-[#d6dcea]">
+        <details class="group py-2 border-b border-background-blue">
           <summary class="flex justify-between items-center cursor-pointer font-bold list-none">
             <h2 class="font-inter text-charcoal">Company</h2>
             <span class="text-sm group-open:rotate-180 transition-transform">
@@ -1166,7 +1270,7 @@
 
         <!-- Products Section -->
 
-        <details class="group py-2 border-b border-[#d6dcea]">
+        <details class="group py-2 border-b border-background-blue">
           <summary class="flex justify-between items-center cursor-pointer font-bold list-none">
             <h2 class="font-inter text-charcoal">Products</h2>
             <span class="arrow text-sm group-open:rotate-180 transition-transform">
@@ -1216,7 +1320,7 @@
 
         <!-- Resources Section -->
 
-        <details class="group py-2 border-b border-[#d6dcea]">
+        <details class="group py-2 border-b border-background-blue">
           <summary class="flex justify-between items-center cursor-pointer font-bold list-none">
             <h2 class="font-inter text-charcoal">Resources</h2>
             <span class="arrow text-sm group-open:rotate-180 transition-transform">
@@ -1276,7 +1380,7 @@
 
         <!-- Solutions Section -->
 
-        <details class="group py-2 border-b border-[#d6dcea]">
+        <details class="group py-2 border-b border-background-blue">
           <summary class="flex justify-between items-center cursor-pointer font-bold list-none">
             <h2 class="font-inter text-charcoal">Solutions</h2>
             <span class="arrow text-sm group-open:rotate-180 transition-transform">
@@ -1318,7 +1422,7 @@
 
         <!-- Contact Section -->
 
-        <details class="group py-2 border-b border-[#d6dcea]">
+        <details class="group py-2 border-b border-background-blue">
           <summary class="flex justify-between items-center cursor-pointer font-bold list-none">
             <h2 class="font-inter text-charcoal">Contact</h2>
             <span class="arrow text-sm group-open:rotate-180 transition-transform">

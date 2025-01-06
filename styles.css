@@ -59,7 +59,17 @@ a:hover::after {
   top: 50%;
 }
 
-.selected {
+button.selected {
   background-color: #e3e8f4;
   color: #000c2a;
+}
+
+#nav-dot-container span.active {
+  width: auto;
+  flex-grow: 1;
+  background-color: #1433d6;
+}
+#logo-btn-container .selected {
+  background-color: #1433d6;
+  color: white;
 }
