@@ -567,10 +567,6 @@ p {
   font-family: Inter, sans-serif;
 }
 
-.visible {
-  visibility: visible;
-}
-
 .fixed {
   position: fixed;
 }
@@ -740,12 +736,12 @@ p {
   height: calc(100vh - 4rem);
 }
 
-.w-12 {
-  width: 3rem;
+.w-10 {
+  width: 2.5rem;
 }
 
-.w-16 {
-  width: 4rem;
+.w-12 {
+  width: 3rem;
 }
 
 .w-20 {
@@ -792,10 +788,6 @@ p {
 .w-min {
   width: -moz-min-content;
   width: min-content;
-}
-
-.w-10 {
-  width: 2.5rem;
 }
 
 .max-w-\[26rem\] {
@@ -1335,8 +1327,8 @@ p {
   transition-duration: 150ms;
 }
 
-.delay-500 {
-  transition-delay: 500ms;
+.delay-300 {
+  transition-delay: 300ms;
 }
 
 .duration-300 {
@@ -1372,15 +1364,12 @@ a:hover::after {
 
 .nav-item .menu {
   opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease, visibility 0s linear 0.3s;
+  pointer-events: none;
+  transition: opacity 0.3s ease 0.3s;
 }
 
 .nav-item:hover .menu {
   opacity: 1;
-  visibility: visible;
-  transition: opacity 0.5s ease, visibility 0s linear 0.3s;
-  transition-delay: 0.5s;
 }
 
 .nav-item-product {
